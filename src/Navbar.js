@@ -15,7 +15,7 @@ export default function Navbar() {
                         <li><Link to='/contacts'>Контакты</Link></li>
                     </ul>
                 </nav>
-                <div className='header-phone'>+ 7 869 468 48 68</div>
+                <div className='header-phone'>+ 7 869 468 48 68</div>
             </div>
         </div>
     );

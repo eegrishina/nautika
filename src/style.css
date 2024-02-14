@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #EBF0FA;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    max-width: 1440px;
+    color: #2B2B2B;
+    margin: 0 auto;
+}
+
+h1 {
+    position: absolute;
+    top: 21%;
+    left: 0;
+    font-family: "Bebas Neue Cyrillic", sans-serif;
+    color: #373F51;
+    font-size: 180px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 999;
+}
+
+h2 {
+    font-family: "Bebas Neue Cyrillic", sans-serif;
+    color: #373F51;
+    font-size: 96px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container,
+.header {
+    margin: 10px 135px 0 135px;
+}
+
+/* Header */
+.navbar {
+    position: fixed;
+    z-index: 99999;
+    margin: 0 auto;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #EBF0FA;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.header-logo {
+    background: url('/public/images/logo.png') no-repeat center/100%;
+    height: 56px;
+    width: 146px;
+}
+
+.header-menu {
+    font-size: 14px;
+}
+
+.header-menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-menu li {
+    list-style: none;
+    font-size: 14px;
+    margin-right: 24px;
+}
+
+.header-menu li:last-child {
+    margin-right: 0;
+}
+
+.header-menu li a:hover {
+    color: #2892D7;
+}
+
+.header-phone {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/**/
+
+.main-info {
+    top: 10px;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.main-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main-column small {
+    font-size: 18px;
+    width: 270px;
+}
+
+.main-img {
+    position: relative;
+    height: 684px;
+    width: 570px;
+    border-radius: 7px;
+    margin: 0 auto;
+    bottom: -52px;
+    left: 0;
+    z-index: 0;
+}
+
+.home {
+    background: url('/public/images/main-ship.png') no-repeat center/100%;
+}
+
+.nopage {
+    background: url('/public/images/404upd.png') no-repeat center/101%;
+}
+
+.main-btn {
+    height: 52px;
+    background-color: #D00000;
+    border-radius: 7px;
+    color: #FBFBFB;
+    font-size: 14px;
+    padding: 16px 26px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.main-btn:hover {
+    background-color: #E80000;
+}
+
+.main-btn:active {
+    outline: none;
+    background-color: #B70A0A;
+}
+
+/* Textblock */
+.textblock {
+    margin-bottom: 150px;
+}
+
+.textblock-title h2:first-child {
+    text-align: right;
+}
+
+.textblock-title h2:last-child {
+    text-align: left;
+    color: #2892D7;
+    margin-bottom: 80px;
+}
+
+.textblock-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.textblock-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 23.4px;
+}
+
+.textblock-text p:last-child {
+    margin-left: 30px;
+    margin-right: 119px;
+}
+
+/* Journey */
+.journey {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.journey-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.journey-flexbox h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #373F51;
+    text-transform: uppercase;
+}
+
+.journey-flexbox span {
+    color: #2892D7;
+}
+
+.journey-img {
+    background: url('/public/images/journey.png') no-repeat center/100%;
+    min-width: 570px;
+    min-height: 570px;
+    border-radius: 7px;
+}
+
+.journey-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.journey-container {
+    height: 158px;
+    width: 270px;
+    background-color: #FBFBFB;
+    margin: 30px 30px 0 0;
+    padding: 18px 14px;
+    border-radius: 7px;
+}
+
+.journey-container h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.journey-container p {
+    font-size: 16px;
+}
+
+.journey-container small {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: right;
+    margin-top: 16px;
+}
+
+.journey-container:hover {
+    background-color: #2892D7;
+    color: #FBFBFB;
+}
+
+.title404 {
+    font-size: 475px;
+    opacity: 0.2;
+    top: 8.4%;
+    left: 31%;
+    color: #2892D7;
+}
+
+.line-btn {
+    color: #D00000;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    border: none;
+    outline: none;
+}

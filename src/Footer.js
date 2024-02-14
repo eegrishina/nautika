@@ -17,7 +17,7 @@ export default function Footer() {
                         <li><Link to='/contacts'>Контакты</Link></li>
                     </ul>
                 </nav>
-                <div className="footer-adress">
+                <div>
                     <h4>Адрес</h4>
                     <ul>
                         <li>г. Новосибирск</li>
@@ -26,11 +26,11 @@ export default function Footer() {
                         <li>Яхт-клуб «Наука»</li>
                     </ul>
                 </div>
-                <div className="footer-contacts">
+                <div>
                     <h4>Контакты</h4>
                     <ul>
                         <li>+ 7 869 468 48 68</li>
-                        <li>nautica@mail.ru</li>
+                        <li><a href="mailto:nautica@mail.ru">nautica@mail.ru</a></li>
                     </ul>
                     <div className="footer-icons">
                         <img src="/public/images/tg-icon.png" alt="tg"></img>
@@ -40,7 +40,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <p>Политика конфиденциальности</p>
+            <p><Link to='/404'>Политика конфиденциальности</Link></p>
         </footer>
     )
 }

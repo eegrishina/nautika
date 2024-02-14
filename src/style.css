@@ -19,12 +19,18 @@ body {
     margin: 0 auto;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    color: #373F51;
+}
+
 h1 {
     position: absolute;
     top: 21%;
     left: 0;
     font-family: "Bebas Neue Cyrillic", sans-serif;
-    color: #373F51;
     font-size: 180px;
     text-transform: uppercase;
     text-align: center;
@@ -34,7 +40,6 @@ h1 {
 
 h2 {
     font-family: "Bebas Neue Cyrillic", sans-serif;
-    color: #373F51;
     font-size: 96px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -95,6 +100,53 @@ h2 {
 .header-phone {
     font-weight: 700;
     font-size: 14px;
+}
+
+/* Footer */
+footer {
+    padding-bottom: 55px;
+}
+
+footer hr {
+    margin-bottom: 28px;
+}
+
+footer p {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 63px;
+    font-size: 14px;
+    opacity: 60%;
+}
+
+footer p:hover {
+    color: #E80000;
+}
+
+footer p:active {
+    color: #B70A0A;
+}
+
+.footer-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 1.7rem;
+}
+
+.footer-column li {
+    list-style: none;
+    font-size: 18px;
+    opacity: 60%;
+}
+
+.footer-column li a:hover {
+    color: #2892D7;
+}
+
+.footer-icons {
+    margin-top: 28px;
 }
 
 /**/
@@ -206,7 +258,6 @@ h2 {
 .journey-flexbox h3 {
     font-size: 28px;
     font-weight: 700;
-    color: #373F51;
     text-transform: uppercase;
 }
 

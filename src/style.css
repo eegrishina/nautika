@@ -22,7 +22,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     color: #373F51;
 }
 
@@ -158,7 +159,7 @@ footer p:active {
 
 .main-info {
     top: 72px;
-    margin-bottom: 150px;
+    margin-bottom: 222px;
     position: relative;
 }
 
@@ -309,14 +310,63 @@ footer p:active {
     margin-top: 16px;
 }
 
+/* Statistics */
+.statistics {
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+}
 
-.title404 {
-    font-size: 475px;
-    opacity: 0.2;
-    top: 8.4%;
-    left: 31%;
+.statistics-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.statistics-left p {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    width: 500px;
+}
+
+.statistics-left p span {
     color: #2892D7;
 }
+
+.statistics-left button {
+    margin-bottom: 30px;
+}
+
+.statistics-right {
+    max-width: 570px;
+}
+
+.statistics-right p {
+    font-size: 18px;
+}
+
+.statistics-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.numbers-item {
+    width: 270px;
+    margin: 0 15px 30px 0;
+}
+
+.numbers-item h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+}
+
+.numbers-item p {
+    font-size: 16px;
+}
+
 
 .line-btn {
     color: #D00000;

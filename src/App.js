@@ -15,6 +15,12 @@ import Contacts from './pages/Contacts';
 import api from './api';
 
 export default function App({ path }) {
+  document.addEventListener('click', (e) => {
+    let link = e.target.closest('a');
+    if (!link) return;
+    window.scrollTo(0, 0);
+  })
+  
   function handleImage() {
     api.map(item => {
       if (item.id === path) {

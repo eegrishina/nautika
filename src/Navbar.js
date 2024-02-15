@@ -5,7 +5,9 @@ export default function Navbar() {
     return (
         <div className="navbar">
             <div className='header'>
-                <Link to="/"><div className='header-logo'></div></Link>
+                <Link to="/">
+                    <img className='header-logo' src="./images/logo.png" alt="Nautika"></img>
+                </Link>
                 <nav className='header-menu'>
                     <ul>
                         <li><Link to='/services'>Услуги</Link></li>

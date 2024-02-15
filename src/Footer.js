@@ -6,7 +6,9 @@ export default function Footer() {
         <footer className="container">
             <hr></hr>
             <div className="footer-column">
-                <Link to="/"><div className='header-logo'></div></Link>
+                <Link to="/">
+                    <img className='header-logo' src="./images/logo.png" alt="Nautika"></img>
+                </Link>
                 <nav>
                     <h4>Навигация</h4>
                     <ul>
@@ -34,9 +36,9 @@ export default function Footer() {
                     </ul>
                     <div className="footer-icons">
                         <img src="./images/tg-icon.png" alt="tg"></img>
-                        <img src="/public/images/wa-icon.png" alt="wa"></img>
-                        <img src="/public/images/vk-icon.png" alt="vk"></img>
-                        <img src="/public/images/inst-icon.png" alt="inst"></img>
+                        <img src="./images/wa-icon.png" alt="wa"></img>
+                        <img src="./images/vk-icon.png" alt="vk"></img>
+                        <img src="./images/inst-icon.png" alt="inst"></img>
                     </div>
                 </div>
             </div>

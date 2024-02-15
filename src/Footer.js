@@ -13,7 +13,7 @@ export default function Footer() {
                         <li><Link to='/services'>Услуги</Link></li>
                         <li><Link to='/certificates'>Сертификаты</Link></li>
                         <li><Link to='/about'>О нас</Link></li>
-                        <li><Link to='/404'>Погода</Link></li>
+                        <li><Link to='/weather'>Погода</Link></li>
                         <li><Link to='/contacts'>Контакты</Link></li>
                     </ul>
                 </nav>
@@ -33,14 +33,14 @@ export default function Footer() {
                         <li><a href="mailto:nautica@mail.ru">nautica@mail.ru</a></li>
                     </ul>
                     <div className="footer-icons">
-                        <img src="/public/images/tg-icon.png" alt="tg"></img>
+                        <img src="./images/tg-icon.png" alt="tg"></img>
                         <img src="/public/images/wa-icon.png" alt="wa"></img>
                         <img src="/public/images/vk-icon.png" alt="vk"></img>
                         <img src="/public/images/inst-icon.png" alt="inst"></img>
                     </div>
                 </div>
             </div>
-            <p><Link to='/404'>Политика конфиденциальности</Link></p>
+            <p><Link to='/privacy'>Политика конфиденциальности</Link></p>
         </footer>
     )
 }

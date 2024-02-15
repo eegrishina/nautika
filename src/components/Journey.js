@@ -11,13 +11,13 @@ export default function Journey() {
                     {api.map(item => {
                         if (item.journey) {
                             return (
-                                <JourneyBtn id={item.id} title={item.title} text={item.text} path={item.id} />
+                                <JourneyBtn key={item.id} title={item.title} text={item.text} path={item.id} />
                             )
                         }
                     })}
                 </div>
             </div>
-            <div className='journey-img'></div>
+            <img className='journey-img' src='./images/journey.png' alt=''></img>
         </div>
     )
 }

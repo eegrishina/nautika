@@ -7,7 +7,7 @@ export default function Footer() {
             <hr></hr>
             <div className="footer-column">
                 <Link to="/">
-                    <img className='header-logo' src="./images/logo.png" alt="Nautika"></img>
+                    <img className='header-logo' src="./images/icons/logo.png" alt="Nautika"></img>
                 </Link>
                 <nav>
                     <h4>Навигация</h4>
@@ -35,10 +35,10 @@ export default function Footer() {
                         <li><a href="mailto:nautica@mail.ru">nautica@mail.ru</a></li>
                     </ul>
                     <div className="footer-icons">
-                        <img src="./images/tg-icon.png" alt="tg"></img>
-                        <img src="./images/wa-icon.png" alt="wa"></img>
-                        <img src="./images/vk-icon.png" alt="vk"></img>
-                        <img src="./images/inst-icon.png" alt="inst"></img>
+                        <img src="./images/icons/tg-icon.png" alt="tg"></img>
+                        <img src="./images/icons/wa-icon.png" alt="wa"></img>
+                        <img src="./images/icons/vk-icon.png" alt="vk"></img>
+                        <img src="./images/icons/inst-icon.png" alt="inst"></img>
                     </div>
                 </div>
             </div>

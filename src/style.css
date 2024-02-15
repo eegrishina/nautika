@@ -69,7 +69,6 @@ h2 {
 }
 
 .header-logo {
-    background: url('/public/images/logo.png') no-repeat center/100%;
     height: 56px;
     width: 146px;
 }
@@ -149,10 +148,16 @@ footer p:active {
     margin-top: 28px;
 }
 
+.footer-icons img {
+    height: 26px;
+    width: 26px;
+    margin-right: 12px;
+}
+
 /**/
 
 .main-info {
-    top: 10px;
+    top: 72px;
     margin-bottom: 150px;
     position: relative;
 }
@@ -165,26 +170,19 @@ footer p:active {
 
 .main-column small {
     font-size: 18px;
-    width: 270px;
+    width: 300px;
 }
 
 .main-img {
-    position: relative;
     height: 684px;
     width: 570px;
     border-radius: 7px;
-    margin: 0 auto;
-    bottom: -52px;
-    left: 0;
-    z-index: 0;
 }
 
-.home {
-    background: url('/public/images/main-ship.png') no-repeat center/100%;
-}
-
-.nopage {
-    background: url('/public/images/404upd.png') no-repeat center/101%;
+.main-btnblock {
+    width: 300px;
+    display: flex;
+    justify-content: right;
 }
 
 .main-btn {
@@ -266,9 +264,8 @@ footer p:active {
 }
 
 .journey-img {
-    background: url('/public/images/journey.png') no-repeat center/100%;
-    min-width: 570px;
-    min-height: 570px;
+    max-width: 570px;
+    max-height: 570px;
     border-radius: 7px;
 }
 
@@ -284,6 +281,12 @@ footer p:active {
     margin: 30px 30px 0 0;
     padding: 18px 14px;
     border-radius: 7px;
+}
+
+.journey-container:hover,
+.journey-container:hover h4 {
+    background-color: #2892D7;
+    color: #FBFBFB;
 }
 
 .journey-container h4 {
@@ -306,10 +309,6 @@ footer p:active {
     margin-top: 16px;
 }
 
-.journey-container:hover {
-    background-color: #2892D7;
-    color: #FBFBFB;
-}
 
 .title404 {
     font-size: 475px;
@@ -327,4 +326,6 @@ footer p:active {
     text-decoration: underline;
     border: none;
     outline: none;
+    text-align: right;
+    width: 300px;
 }

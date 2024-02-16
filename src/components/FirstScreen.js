@@ -1,14 +1,14 @@
 import React from 'react';
 
-export default function FirstScreen({ imgPath }) {
+export default function FirstScreen({ imgPath, title, small, btn }) {
     return (
         <div className='main-info'>
-            <h1>Откройте для себя парусный спорт</h1>
+            <h1>{title}</h1>
             <div className='main-column'>
-                <small>Первые шаги к серьезному<br></br> парусному спорту.</small>
+                <small>{small}</small>
                 <img className='main-img' src={imgPath} alt=''></img>
                 <div className='main-btnblock'>
-                    <button className='main-btn'>Записаться на тренировку</button>
+                    <button className='main-btn'>{btn}</button>
                 </div>
             </div>
         </div>

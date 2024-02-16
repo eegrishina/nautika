@@ -5,7 +5,7 @@ export default function Statistics() {
     return (
         <div className="statistics">
             <div className="statistics-left">
-                <p>Мы предоставляем качественное обучение, индивидуальный подход и незабываемые морские приключения. <span>Начните свой путь в яхтинг с нашей командой!</span></p>
+                <p>Мы предоставляем качественное обучение, индивидуальный подход и незабываемые морские приключения. <span className='blue'>Начните свой путь в яхтинг с нашей командой!</span></p>
                 <button className="main-btn">
                     <Link to='services'>Перейти к услугам</Link>
                 </button>

@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function TextBlock() {
+export default function TextBlock({ title1, title2, blue1, blue2, p1, p2, btn, link }) {
     return (
         <div className='textblock'>
             <div className='textblock-title'>
-                <h2>От крепкой любви к морю</h2>
-                <h2>к открытию парусной школы</h2>
+                <h2 className={blue1 ? "blue" : "darkblue"}>{title1}</h2>
+                <h2 className={blue2 ? "blue" : "darkblue"}>{title2}</h2>
             </div>
             <div className='textblock-info'>
                 <div className='textblock-text'>
-                    <p>Школа «Наутика» зародилась в 2017 году в Новосибирске под трепетным руководством Евгении Белых.</p>
-                    <p>Изначально это было семейное увлечение парусным искусством, но вскоре оно переросло в возможность для многих наслаждаться морскими приключениями, шумом волн и свободой свежего ветра.</p>
+                    <p>{p1}</p>
+                    <p>{p2}</p>
                 </div>
                 <button className='main-btn'>
-                    <Link to='about'>Узнать подробнее</Link>
+                    <Link to={link}>{btn}</Link>
                 </button>
             </div>
         </div>

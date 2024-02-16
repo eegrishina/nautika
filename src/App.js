@@ -12,7 +12,7 @@ import About from './pages/About';
 import Thanks from './pages/Thanks';
 import NoPage from './pages/NoPage';
 import Contacts from './pages/Contacts';
-import api from './api';
+import {api} from './api';
 
 export default function App({ path }) {
   document.addEventListener('click', (e) => {

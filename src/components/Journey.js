@@ -1,12 +1,12 @@
 import React from 'react';
 import JourneyBtn from './JourneyBtn';
-import api from '../api';
+import { api } from '../api';
 
 export default function Journey() {
     return (
         <div className='journey'>
             <div className='journey-flexbox'>
-                <h3><span>Форматы</span> приключений</h3>
+                <h3><span className='blue'>Форматы</span> приключений</h3>
                 <div className='journey-buttons'>
                     {api.map(item => {
                         if (item.journey) {
@@ -17,7 +17,7 @@ export default function Journey() {
                     })}
                 </div>
             </div>
-            <img className='journey-img' src='./images/journey.png' alt=''></img>
+            <img className='side-img' src='./images/journey.png' alt=''></img>
         </div>
     )
 }

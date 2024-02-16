@@ -8,7 +8,10 @@ import ChooseYacht from '../components/ChooseYacht';
 export default function Home() {
     return (
         <div className='container'>
-            <FirstScreen imgPath='./images/main-ship.png' />
+            <FirstScreen imgPath='./images/main-ship.png'
+                title="Откройте для себя парусный спорт"
+                small="Первые шаги к серьезному парусному спорту."
+                btn="Записаться на тренировку" />
             <TextBlock
                 title1="От крепкой любви к морю"
                 title2="к открытию парусной школы"

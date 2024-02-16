@@ -1,9 +1,13 @@
 import React from 'react';
+import FirstScreen from '../components/FirstScreen';
 
 export default function About() {
     return (
         <div className='container'>
-            <h1>About us</h1>
+            <FirstScreen imgPath='./images/main-ship-about.png'
+                title="знакомство с наутикой"
+                small="Давайте узнаем друг друга немного ближе"
+                btn="Получить консультацию" />
         </div>
     )
 }

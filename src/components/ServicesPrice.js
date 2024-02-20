@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 export default function ServicesPrice({ title, path, data }) {
     let listData = data.map(i => {
         return (
-            <div key={i.id} className="priceitem-box">
+            <div className="priceitem-box">
                 <h6>{i.title}</h6>
                 <p>{i.text}</p>
-                <button>{i.price}</button>
+                <button className={i.free ? "free" : ""}>{i.price}</button>
             </div>
         )
     });

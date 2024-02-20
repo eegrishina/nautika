@@ -525,6 +525,11 @@ footer p:active {
     font-family: inherit;
 }
 
+.priceitem-box button.free {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
 .circle-btn {
     position: absolute;
     bottom: 30px;

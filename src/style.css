@@ -67,7 +67,8 @@ h2.darkblue {
     color: var(--dark-color-title);
 }
 
-h2.blue, span.blue {
+h2.blue,
+span.blue {
     color: var(--blue-color);
 }
 
@@ -464,6 +465,87 @@ footer p:active {
     font-size: 14px;
     padding-left: 6px;
     vertical-align: middle;
+}
+
+/* Services */
+.services-flexbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.price-flexbox {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    background-color: var(--white-color);
+}
+
+.price-flexbox:last-child {
+    margin-bottom: 0;
+}
+
+.price-flexbox h5 {
+    font-family: 'Bebas Neue Cyrillic', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.priceitem-flexbox {
+    display: flex;
+    align-items: flex-end;
+}
+
+.priceitem-box {
+    width: 270px;
+    margin-right: 114px;
+}
+
+.priceitem-box h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.priceitem-box p {
+    font-size: 16px;
+    opacity: 60%;
+}
+
+.priceitem-box button {
+    border: 1px solid var(--blue-color);
+    border-radius: 30px;
+    padding: 8px 20px;
+    background-color: inherit;
+    color: var(--blue-color);
+    margin-top: 8px;
+    font-family: inherit;
+}
+
+.circle-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    height: 52px;
+    width: 52px;
+    border: 1px solid var(--red-color);
+    border-radius: 50%;
+    background-color: inherit;
+    opacity: 30%;
+    cursor: pointer;
+}
+
+.circle-btn:hover {
+    opacity: 1;
+}
+
+.circle-btn i {
+    font-size: 26px;
+    color: var(--red-color);
+    transform: rotate(-45deg);
 }
 
 /* 404 */

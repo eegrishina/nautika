@@ -1,5 +1,6 @@
 import React from 'react';
 import FirstScreen from '../components/FirstScreen';
+import ServicesDetail from '../components/ServicesDetail';
 
 export default function Services() {
     return (
@@ -8,6 +9,7 @@ export default function Services() {
                 title="приключения под парусом"
                 small="С нами каждая морская мечта становится реальностью."
                 btn="Получить консультацию" />
+            <ServicesDetail />
         </div>
     )
 }

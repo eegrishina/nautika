@@ -18,7 +18,7 @@ export default function ServicesPrice({ title, path, data }) {
             <div className="priceitem-flexbox">
                 {listData}
             </div>
-            <Link to={path}><button className="circle-btn"><i className="fas fa-arrow-right"></i></button></Link>
+            <Link to={path}><button className="circle-btn btn-link"><i className="fas fa-arrow-right"></i></button></Link>
         </div>
     )
 }

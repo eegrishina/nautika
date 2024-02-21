@@ -24,6 +24,16 @@ export default function Home() {
             <Statistics />
             <ChooseYacht />
             <TextBlock
+                // titles={[
+                //     {
+                //         text: "first line",
+                //         blue: true
+                //     },
+                //     {
+                //         text: "second line",
+                //         blue: false
+                //     }
+                // ]}
                 title1="Добавьте ярких красок"
                 title2="в свою жизнь и жизнь близких"
                 blue1={true} blue2={false}

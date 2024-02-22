@@ -4,6 +4,8 @@ import TextBlock from '../components/TextBlock';
 import Journey from '../components/Journey';
 import Statistics from '../components/Statistics';
 import ChooseYacht from '../components/ChooseYacht';
+import Form from '../components/Form';
+import Map from '../components/Map';
 
 export default function Home() {
     return (
@@ -49,6 +51,8 @@ export default function Home() {
                 ]}
                 btn="Оформить сертификат"
                 link="certificates" />
+            <Form />
+            <Map />
         </div>
     )
 }

@@ -20,6 +20,7 @@
 a {
     color: inherit;
     text-decoration: none;
+    outline: none;
 }
 
 body {
@@ -429,7 +430,11 @@ footer p:active {
     cursor: pointer;
 }
 
-.top-btn button.chosen {
+.top-btn button:hover {
+    background-color: #EBF0FA;
+}
+
+.top-btn button.active {
     background-color: var(--blue-color);
     color: var(--white-color);
     font-weight: 700;
@@ -621,6 +626,111 @@ footer p:active {
     font-size: 18px;
     line-height: 23.4px;
     margin-bottom: 18px;
+}
+
+/* Form */
+.form-container {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.form-right img {
+    width: 569px;
+    height: 267px;
+    margin: 30px 30px 0 0;
+}
+
+/* form input:required {
+    border: 1px solid var(--red-color);
+} */
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-left label {
+    color: var(--dark-color-title);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.07px;
+}
+
+.form-left input {
+    font-size: 16px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    margin: 6px 0 20px 0;
+    /* cursor: pointer; */
+}
+
+.form-left input:focus {
+    outline: 1px solid var(--blue-color);
+}
+
+.form-left input::placeholder {
+    opacity: 30%;
+}
+
+.form-left p {
+    font-size: 14px;
+    opacity: 30%;
+    width: 270px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row-item {
+    width: 275.5px;
+}
+
+.form-row span {
+    text-decoration: underline;
+}
+
+
+/* Map */
+.map-container {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.map-info {
+    width: 370px;
+    height: 373px;
+    padding: 30px;
+    border-radius: 7px;
+    margin-right: 30px;
+    background-color: var(--white-color);
+}
+
+.info {
+    margin: 21px 0;
+}
+
+.map-info small {
+    font-size: 13px;
+    opacity: 60%;
+}
+
+.map-info p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.map-container iframe {
+    width: 770px;
+    height: 373px;
+    border-radius: 7px;
+    border: 1px solid var(--blue-color);
 }
 
 /* 404 */

@@ -591,6 +591,7 @@ footer p:active {
 
 .gallery-big-photos {
     display: flex;
+    transition: transform 0.3s ease-out;
 }
 
 .gallery-big-photos img {

@@ -39,7 +39,7 @@ export default function ChooseOneYacht({ handleClick, name, description }) {
         <div className="choose-boxes">
             <div className="choose-top">
                 <div className="top-btn">
-                    <button id="luch" className="chosen">Луч</button>
+                    <button id="luch" className="active">Луч</button>
                     <button id="soling">Солинг</button>
                     <button id="finn">Финн</button>
                 </div>

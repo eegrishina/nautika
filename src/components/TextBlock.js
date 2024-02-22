@@ -1,21 +1,31 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function TextBlock({ title1, title2, blue1, blue2, p1, p2, btn, link }) {
+export default function TextBlock({ titles, btn, link }) {
+    const textBlockH2 = titles.map(i => {
+        return (
+            <h2 key={i.id} className={i.blue ? "blue" : "darkblue"}>{i.text}</h2>
+        )
+    })
+
+    const textBlockP = titles.map(i => {
+        return (
+            <p key={i.id}>{i.p}</p>
+        )
+    })
+
     return (
         <div className='textblock'>
             <div className='textblock-title'>
-                <h2 className={blue1 ? "blue" : "darkblue"}>{title1}</h2>
-                <h2 className={blue2 ? "blue" : "darkblue"}>{title2}</h2>
+                {textBlockH2}
             </div>
             <div className='textblock-info'>
                 <div className='textblock-text'>
-                    <p>{p1}</p>
-                    <p>{p2}</p>
+                    {textBlockP}
                 </div>
-                <button className='main-btn'>
-                    <Link to={link}>{btn}</Link>
-                </button>
+                <Link to={link}>
+                    <button className='main-btn'>{btn}</button>
+                </Link>
             </div>
         </div>
     )

@@ -3,61 +3,61 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { apiYacht } from "../api";
 
-export default function ChooseOneYacht({ handleClick, name, description }) {
-    // const [yacht, setYacht] = useState(apiYacht);
+export default function ChooseOneYacht() {
+    const [yachtName, setYachtName] = useState("Луч");
+    const [yachtBlock, setYachtBlock] = useState(
+        <div className="top-text">
+            <h4>Яхта <span className="blue">«Луч»</span></h4>
+            <p>«Луч» — олимпийский класс яхт, предназначенный для одного человека, который одновременно занимается и управлением яхтой, и настройкой паруса. Эта легкая и динамичная яхта отлично подходит для тренировки реакции и баланса.</p>
+        </div>
+    );
 
-    // function handleClick(eventId) {
-    //     setYacht(apiYacht.filter(y => eventId === y.id));
-    // }
+    const buttons = apiYacht.map(y => {
+        return (
+            <button key={y.id} id={y.id} className={y.active && "active"}
+                onClick={() => handleClick(y.id)}>{y.name}</button>
+        )
+    })
 
 
-    // const luch = document.getElementById('luch');
-    // const soling = document.getElementById('soling');
-    // const finn = document.getElementById('finn');
-    // const chooseBtn = document.querySelector('.top-btn');
-    // console.log(chooseBtn);
+    function handleClick(btnId) {
+        apiYacht
+            .filter(y => btnId !== y.id)
+            .map(y => y.active = false)
 
-    // chooseBtn.addEventListener('click', (e) => {
-    //     let btn = e.target.closest('button');
-    //     if (!btn) return;
-    //     if (!chooseBtn.contains(btn)) return;
-
-    // apiYacht.filter(yacht => {
-    //     if (yacht.id === btn.id) {
-    //         return (
-    //             <>
-    //                 <h4>Яхта <span>{yacht.name}</span></h4>
-    //                 <p>{yacht.description}</p>
-    //             </>
-    //         )
-    //     }
-    // })
-    // })
-
+        setYachtBlock(apiYacht
+            .filter(y => btnId === y.id)
+            .map(y => {
+                setYachtName(y.name)
+                y.active = true
+                return (
+                    <div key={y.id} className="top-text">
+                        <h4>Яхта <span className="blue">«{y.name}»</span></h4>
+                        <p>{y.description}</p>
+                    </div>
+                )
+            })[0])
+    }
 
     return (
-        <div className="choose-boxes">
-            <div className="choose-top">
-                <div className="top-btn">
-                    <button id="luch" className="active">Луч</button>
-                    <button id="soling">Солинг</button>
-                    <button id="finn">Финн</button>
+        <div className="choose-yacht">
+            <img className="side-img" src="./images/choose-yacht.png" alt=""></img>
+            <div className="choose-boxes">
+                <div className="choose-top">
+                    <div className="top-btn">
+                        {buttons}
+                    </div>
+                    {yachtBlock}
                 </div>
-                <div className="top-text">
-                    <h4>Яхта <span className="blue">«Луч»</span></h4>
-                    <p>«Луч» — олимпийский класс яхт, предназначенный для одного человека, который одновременно занимается и управлением яхтой, и настройкой паруса. Эта легкая и динамичная яхта отлично подходит для тренировки реакции и баланса.</p>
-                    {/* <h4>Яхта <span className="blue">{yacht.name}</span></h4>
-                    <p>{yacht.description}</p> */}
-                </div>
-            </div>
-            <div className="choose-bottom">
-                <div className="bottom-text">
-                    <h4>Идеальная погода для яхты <span className='blue'>«Луч»</span></h4>
-                    <p>Сегодня отличная возможность отправиться в плавание на яхте «Луч». Не забудьте прихватить с собой крем SPF, а остальное — за нами!</p>
-                </div>
-                <div className="bottom-btn">
-                    <p><Link to='/weather'>Смотреть подробный прогноз</Link></p>
-                    <button><Link to='/training'>Записаться на тренировку <i className="fas fa-arrow-right"></i></Link></button>
+                <div className="choose-bottom">
+                    <div className="bottom-text">
+                        <h4>Идеальная погода для яхты <span className='blue'>«{yachtName}»</span></h4>
+                        <p>Сегодня отличная возможность отправиться в плавание на яхте «{yachtName}». Не забудьте прихватить с собой крем SPF, а остальное — за нами!</p>
+                    </div>
+                    <div className="bottom-btn">
+                        <p><Link to='/weather'>Смотреть подробный прогноз</Link></p>
+                        <button><Link to='/training'>Записаться на тренировку <i className="fas fa-arrow-right"></i></Link></button>
+                    </div>
                 </div>
             </div>
         </div>

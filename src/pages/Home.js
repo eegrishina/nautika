@@ -3,7 +3,7 @@ import FirstScreen from '../components/FirstScreen';
 import TextBlock from '../components/TextBlock';
 import Journey from '../components/Journey';
 import Statistics from '../components/Statistics';
-import ChooseYacht from '../components/ChooseYacht';
+import ChooseOneYacht from '../components/ChooseOneYacht';
 import Form from '../components/Form';
 import Map from '../components/Map';
 
@@ -33,7 +33,7 @@ export default function Home() {
                 link="about" />
             <Journey />
             <Statistics />
-            <ChooseYacht />
+            <ChooseOneYacht />
             <TextBlock
                 titles={[
                     {

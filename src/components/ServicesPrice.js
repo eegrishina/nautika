@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function ServicesPrice({ title, path, data }) {
-    let listData = data.map(i => {
+    let listData = data.map((i, idx) => {
         return (
-            <div className="priceitem-box">
+            <div key={idx} className="priceitem-box">
                 <h6>{i.title}</h6>
                 <p>{i.text}</p>
-                <button className={i.free ? "free" : ""}>{i.price}</button>
+                <button className={i.free ? "pill free" : "pill"}>{i.price}</button>
             </div>
         )
     });

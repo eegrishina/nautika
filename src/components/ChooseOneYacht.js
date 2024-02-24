@@ -56,7 +56,7 @@ export default function ChooseOneYacht() {
                     </div>
                     <div className="bottom-btn">
                         <p><Link to='/weather'>Смотреть подробный прогноз</Link></p>
-                        <button><Link to='/training'>Записаться на тренировку <i className="fas fa-arrow-right"></i></Link></button>
+                        <button className="btn-red-arrow"><Link to='/training'>Записаться на тренировку <i className="fas fa-arrow-right"></i></Link></button>
                     </div>
                 </div>
             </div>

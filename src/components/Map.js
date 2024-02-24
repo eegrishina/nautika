@@ -18,7 +18,7 @@ export default function Map() {
             </div>
 
             <section>
-                <iframe title="map" src="https://yandex.ru/map-widget/v1/?ll=83.051717%2C54.836438&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTk4MTkxOTM4EkbQoNC-0YHRgdC40Y8sINCd0L7QstC-0YHQuNCx0LjRgNGB0LosINCR0LXRgNC00YHQutC40Lkg0YLRg9C_0LjQuiwgOS8xIgoNcBmmQhUgWFtC&z=17.17" frameborder="1" allowfullscreen="true"></iframe>
+                <iframe title="map" src="https://yandex.ru/map-widget/v1/?ll=83.051717%2C54.836438&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTk4MTkxOTM4EkbQoNC-0YHRgdC40Y8sINCd0L7QstC-0YHQuNCx0LjRgNGB0LosINCR0LXRgNC00YHQutC40Lkg0YLRg9C_0LjQuiwgOS8xIgoNcBmmQhUgWFtC&z=17.17" frameBorder="1" allowFullScreen={true}></iframe>
             </section>
         </div>
     )

@@ -25,27 +25,27 @@ export default function Form() {
 
             <form name="form" action="" method="get" className="form-left">
                 <div>
-                    <label for="name">Ваше имя*</label>
+                    <label htmlFor="name">Ваше имя*</label>
                     <input type="text" name="name" id="name" placeholder="Имя" required style={errorInput}></input>
 
-                    <label for="lastname">Ваша фамилия*</label>
+                    <label htmlFor="lastname">Ваша фамилия*</label>
                     <input type="text" name="lastname" id="lastname" placeholder="Фамилия" required></input>
 
                     <div className="form-row">
                         <div className="form-row-item">
-                            <label for="phone">Номер телефона*</label>
+                            <label htmlFor="phone">Номер телефона*</label>
                             <Input
                                 placeholder="+7(     )     -    - "
                                 // country="RU"
                                 // international
                                 // withCountryCallingCode
                                 required
-                                maxlength="16"
+                                maxLength="16"
                                 value={value}
                                 onChange={setValue} />
                         </div>
                         <div className="form-row-item">
-                            <label for="email">Электронная почта*</label>
+                            <label htmlFor="email">Электронная почта*</label>
                             <input type="email" name="email" id="email" placeholder="Адрес эл. почты" required></input>
                         </div>
                     </div>

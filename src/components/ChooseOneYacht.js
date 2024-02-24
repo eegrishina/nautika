@@ -14,7 +14,7 @@ export default function ChooseOneYacht() {
 
     const buttons = apiYacht.map(y => {
         return (
-            <button key={y.id} id={y.id} className={y.active && "active"}
+            <button key={y.id} id={y.id} className={y.active ? "active" : undefined}
                 onClick={() => handleClick(y.id)}>{y.name}</button>
         )
     })

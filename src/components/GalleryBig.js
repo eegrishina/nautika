@@ -20,7 +20,7 @@ export default function GallerryBig() {
         <div className='gallery-big'>
             <div className='gallery-big-title'>
                 <h3>подарочные <span className='blue'>сертификаты</span></h3>
-                <div className='gallery-btn'>
+                <div className='scroll-btn'>
                     <button className='circle-btn' id='left'
                         disabled={count < 1}
                         onClick={handleClickRight}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import FirstScreen from '../components/FirstScreen';
 import PriceCards from '../components/PriceCards';
+import ScrollTexts from '../components/ScrollTexts';
 
 export default function Education() {
     return (
@@ -44,6 +45,35 @@ export default function Education() {
                         cardTime: "8 часов",
                         cardBtn: "Записаться на тренировку",
                     }
+                ]} />
+            <ScrollTexts
+                mainTitle={[
+                    {
+                        title: "освойте яхтенную теорию",
+                        blue: false,
+                    },
+                    {
+                        title: "всего за четыре этапа",
+                        blue: true,
+                    }
+                ]}
+                props={[
+                    {
+                        title: "Ветровая теория и техника",
+                        text: "На первом этапе обучения объясним и наглядно покажем ветровую теорию и влияние ветра на яхту. Кроме того, изучаются части яхты и их назначение, а также осваивается техника постановки и управления парусами и рулем."
+                    },
+                    {
+                        title: "Теория и практика навигации",
+                        text: "Изучаем теорию курсов и учимся определять направление движения яхты, затем отрабатываем галсы, лавировку и поворот оверштаг. Также обязательно объясняем первые необходимые действия при перевороте яхты."
+                    },
+                    {
+                        title: "Правила расхождения",
+                        text: "Углубляемся в навигацию и подробно изучаем правила расхождения для безопасно передвижения и взаимодействия с другими судами на воде. Также осваиваем поворот фордевинд и технику движения всеми курсами."
+                    },
+                    {
+                        title: "Lorem ipsum dolor",
+                        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius distinctio nobis sapiente, error ratione, vitae ipsam accusantium, nulla saepe autem numquam odio! Reprehenderit nisi, doloribus commodi veniam similique modi dignissimos."
+                    },
                 ]} />
         </div>
     )

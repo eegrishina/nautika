@@ -781,8 +781,24 @@ footer p:active {
 }
 
 .card-container h5,
-.card-btns .btn-red-arrow {
+.card-container .btn-red-arrow {
     transition: font-size 0.3s ease-in;
+    animation: opacityBtn 0.3s ease-in;
+}
+
+@keyframes opacityBtn {
+
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 .card-container p {

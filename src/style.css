@@ -840,6 +840,7 @@ footer p:active {
 .scroll-texts {
     margin-top: 80px;
     display: inline-flex;
+    transition: transform 0.3s ease-out;
 }
 
 .one-text-container {

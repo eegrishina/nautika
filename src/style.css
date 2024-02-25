@@ -40,11 +40,16 @@ h5 {
     color: var(--dark-color-title);
 }
 
+h1,
+h2,
+h5 {
+    font-family: "Bebas Neue Cyrillic", sans-serif;
+}
+
 h1 {
     position: absolute;
     top: 21%;
     left: 0;
-    font-family: "Bebas Neue Cyrillic", sans-serif;
     font-size: 180px;
     text-transform: uppercase;
     text-align: center;
@@ -53,7 +58,6 @@ h1 {
 }
 
 h2 {
-    font-family: "Bebas Neue Cyrillic", sans-serif;
     font-size: 96px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -71,12 +75,17 @@ h4 {
     margin-bottom: 12px;
 }
 
-h2.darkblue {
+h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.darkblue {
     color: var(--dark-color-title);
 }
 
-h2.blue,
-span.blue {
+.blue {
     color: var(--blue-color);
 }
 
@@ -85,7 +94,7 @@ span.blue {
     margin: 10px 135px 0 135px;
 }
 
-/* Header */
+/* -----Header----- */
 .navbar {
     position: fixed;
     z-index: 99999;
@@ -136,7 +145,7 @@ span.blue {
     font-size: 14px;
 }
 
-/* Footer */
+/* -----Footer----- */
 footer {
     padding-bottom: 55px;
 }
@@ -189,7 +198,7 @@ footer p:active {
     margin-right: 12px;
 }
 
-/**/
+/* -----Home Page-----*/
 
 .main-info {
     top: 72px;
@@ -373,7 +382,6 @@ footer p:active {
 }
 
 .numbers-item h5 {
-    font-family: 'Bebas Neue', sans-serif;
     font-size: 70px;
 }
 
@@ -453,27 +461,27 @@ footer p:active {
     text-decoration: underline;
 }
 
-.bottom-btn button {
+.btn-red-arrow {
     color: var(--red-color);
     border: none;
     background: inherit;
 }
 
-.bottom-btn button:hover {
+.btn-red-arrow:hover {
     color: var(--red-color-hover);
 }
 
-.bottom-btn button:active {
+.btn-red-arrow:active {
     color: var(--red-color-active);
 }
 
-.bottom-btn i {
+.btn-red-arrow i {
     font-size: 14px;
     padding-left: 6px;
     vertical-align: middle;
 }
 
-/* Services */
+/* -----Services Page----- */
 .services-flexbox {
     display: flex;
     flex-direction: column;
@@ -489,16 +497,16 @@ footer p:active {
     background-color: var(--white-color);
 }
 
+.price-flexbox:hover {
+    box-shadow: 0px 0px 10px 0px #2892D71F;
+}
+
 .price-flexbox:last-child {
     margin-bottom: 0;
 }
 
 .price-flexbox h5 {
-    font-family: 'Bebas Neue Cyrillic', sans-serif;
     font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 20px;
 }
 
 .priceitem-flexbox {
@@ -521,7 +529,7 @@ footer p:active {
     opacity: 60%;
 }
 
-.priceitem-box button {
+.pill {
     border: 1px solid var(--blue-color);
     border-radius: 30px;
     padding: 8px 20px;
@@ -531,7 +539,7 @@ footer p:active {
     font-family: inherit;
 }
 
-.priceitem-box button.free {
+.pill.free {
     background-color: var(--blue-color);
     color: var(--white-color);
 }
@@ -733,7 +741,71 @@ footer p:active {
     border: 1px solid var(--blue-color);
 }
 
-/* 404 */
+/* -----Education Page----- */
+.price-cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.price-cards-left {
+    width: 370px;
+}
+
+.price-cards-left p {
+    font-size: 18px;
+    margin: 30px 0 20px 0;
+}
+
+.price-cards-left small {
+    font-size: 13px;
+    line-height: 17.71px;
+    opacity: 60%;
+}
+
+.card-container {
+    background-color: var(--white-color);
+    border-radius: 7px;
+    padding: 36px;
+    margin-bottom: 28px;
+    width: 670px;
+    transition: font-size 0.3s ease-in;
+}
+
+.card-container:last-child {
+    margin-bottom: 0;
+}
+
+.card-container:hover {
+    box-shadow: 0px 0px 10px 0px #2892D71F;
+}
+
+.card-container h5,
+.card-btns .btn-red-arrow {
+    transition: font-size 0.3s ease-in;
+}
+
+.card-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.card-btns,
+.card-btns-pills {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-btns {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pill {
+    margin-right: 10px;
+}
+
+/* -----Page 404----- */
 .line-btn {
     color: var(--red-color);
     font-size: 14px;

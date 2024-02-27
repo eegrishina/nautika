@@ -79,14 +79,35 @@ export default function Education() {
             <GallerrySmall
                 title="Как проходят тренировки"
                 text="Наши уроки на яхте класса «Луч» ориентированы в первую очередь на практическое обучение. Теоретический материал интегрируется непосредственно в упражнения, обеспечивая применение знаний на практике."
-                mainImg="./images/gallery-small6.png"
                 images={[
-                    "./images/gallery-small11.jpeg",
-                    "./images/gallery-small1.png",
-                    "./images/gallery-small9.png",
-                    "./images/gallery-small3.jpeg",
-                    "./images/gallery-small12.jpeg",
-                    "./images/gallery-small10.jpeg"
+                    {
+                        id: 0,
+                        src: "./images/gallery-small6.png",
+                    },
+                    {
+                        id: 11,
+                        src: "./images/gallery-small11.jpeg",
+                    },
+                    {
+                        id: 1,
+                        src: "./images/gallery-small1.png",
+                    },
+                    {
+                        id: 9,
+                        src: "./images/gallery-small9.png",
+                    },
+                    {
+                        id: 3,
+                        src: "./images/gallery-small3.jpeg",
+                    },
+                    {
+                        id: 12,
+                        src: "./images/gallery-small12.jpeg",
+                    },
+                    {
+                        id: 10,
+                        src: "./images/gallery-small10.jpeg",
+                    },
                 ]}
             />
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import FirstScreen from '../components/FirstScreen';
 import PriceCards from '../components/PriceCards';
 import ScrollTexts from '../components/ScrollTexts';
+import GallerrySmall from '../components/GallerySmall';
 
 export default function Education() {
     return (
@@ -75,6 +76,19 @@ export default function Education() {
                         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius distinctio nobis sapiente, error ratione, vitae ipsam accusantium, nulla saepe autem numquam odio! Reprehenderit nisi, doloribus commodi veniam similique modi dignissimos."
                     },
                 ]} />
+            <GallerrySmall
+                title="Как проходят тренировки"
+                text="Наши уроки на яхте класса «Луч» ориентированы в первую очередь на практическое обучение. Теоретический материал интегрируется непосредственно в упражнения, обеспечивая применение знаний на практике."
+                mainImg="./images/gallery-small6.png"
+                images={[
+                    "./images/gallery-small11.jpeg",
+                    "./images/gallery-small1.png",
+                    "./images/gallery-small9.png",
+                    "./images/gallery-small3.jpeg",
+                    "./images/gallery-small12.jpeg",
+                    "./images/gallery-small10.jpeg"
+                ]}
+            />
         </div>
     )
 }

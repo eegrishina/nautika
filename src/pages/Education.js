@@ -3,6 +3,8 @@ import FirstScreen from '../components/FirstScreen';
 import PriceCards from '../components/PriceCards';
 import ScrollTexts from '../components/ScrollTexts';
 import GallerrySmall from '../components/GallerySmall';
+import TextBlock from '../components/TextBlock';
+import FAQs from '../components/FAQs';
 
 export default function Education() {
     return (
@@ -108,8 +110,62 @@ export default function Education() {
                         id: 10,
                         src: "./images/gallery-small10.jpeg",
                     },
+                ]} />
+            <TextBlock
+                titles={[
+                    {
+                        id: 1,
+                        text: "Добавьте ярких красок",
+                        blue: true,
+                        p: "У вас есть замечательная возможность сделать особенный подарок для ваших близких — купить подарочный сертификат на любые наши услуги."
+                    },
+                    {
+                        id: 2,
+                        text: "в свою жизнь и жизнь близких",
+                        blue: false,
+                        p: "Позвольте им ощутить ветер в парусах, окунуться в мир ярких морских приключений и создать незабываемые воспоминания на долгие годы."
+                    }
                 ]}
-            />
+                btn="Оформить сертификат"
+                link="certificates" />
+            <FAQs
+                props={[
+                    {
+                        id: 1,
+                        question: "Какие меры безопасности принимаются во время занятий?",
+                        answer: "Занятия проводятся под контролем опытных инструкторов, обладающих всеми необходимыми компетенциями, в том числе навыками оказания первой помощи. Вы в обязательном порядке получаете спасательный жилет и проходите краткий инструктаж перед началом занятий. Также, находясь на воде, мы всегда имеем возможность связаться со спасателями.",
+                    },
+                    {
+                        id: 2,
+                        question: "Какие требования к возрасту для участия в обучении?",
+                        answer: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ipsa optio, dignissimos tempora distinctio obcaecati doloremque, alias laborum dolorem voluptas ab adipisci molestias, provident iure est sed quidem architecto deserunt autem. Dolor quibusdam consequatur explicabo laborum. Beatae hic veritatis quam!",
+                    },
+                    {
+                        id: 3,
+                        question: "Есть ли возможность арендовать яхту после окончания курса?",
+                        answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officia cum molestiae magni repellat error debitis perspiciatis suscipit. Veniam, nam.",
+                    },
+                    {
+                        id: 4,
+                        question: "Какие дополнительные материалы или снаряжение нужно приносить на уроки?",
+                        answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi dicta distinctio consectetur dignissimos quas consequuntur, illum placeat eius vitae voluptates voluptatem aliquam non aspernatur itaque ipsam. Quod ea ab corporis praesentium quam consectetur.",
+                    },
+                    {
+                        id: 5,
+                        question: "Есть ли у вас сертификаты или аккредитации для ваших инструкторов?",
+                        answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officia cum molestiae magni repellat error debitis perspiciatis suscipit. Aut sint blanditiis enim voluptatibus facilis aspernatur! Veniam, nam.",
+                    },
+                    {
+                        id: 6,
+                        question: "Как долго длится базовый курс обучения на яхте?",
+                        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium facere sit delectus iusto soluta, illum dignissimos enim consequatur doloribus!",
+                    },
+                    {
+                        id: 7,
+                        question: "Каковы условия отмены или переноса занятий?",
+                        answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi dicta distinctio consectetur dignissimos quas consequuntur, illum placeat eius vitae voluptates voluptatem aliquam non aspernatur itaque ipsam. Quod ea ab corporis praesentium quam consectetur.",
+                    },
+                ]} />
         </div>
     )
 }

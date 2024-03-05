@@ -647,52 +647,57 @@ footer p:active {
 .form-container {
     display: flex;
     margin-bottom: 150px;
+    gap: 30px;
 }
 
-.form-right img {
+.form-container img {
     width: 569px;
-    height: 267px;
-    margin: 30px 30px 0 0;
+    /* height: 267px; */
+    /* margin: 30px 30px 0 0; */
+}
+
+.form-container h3:nth-child(2) {
+    margin: -5px 0 20px 0;
 }
 
 /* form input:required {
     border: 1px solid var(--red-color);
 } */
 
-.form-left {
+form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
 }
 
-.form-left label {
+form label {
     color: var(--dark-color-title);
     font-size: 14px;
     font-weight: 600;
     line-height: 19.07px;
 }
 
-.form-left input {
+form input {
     font-size: 16px;
     width: 100%;
     padding: 14px;
     border: none;
     border-radius: 7px;
     outline: none;
-    margin: 6px 0 20px 0;
+    margin: 6px 0 15px 0;
     /* cursor: pointer; */
 }
 
-.form-left input:focus {
+form input:focus {
     outline: 1px solid var(--blue-color);
 }
 
-.form-left input::placeholder {
+form input::placeholder {
     opacity: 30%;
 }
 
-.form-left p {
+form p {
     font-size: 14px;
     opacity: 30%;
     width: 270px;
@@ -711,6 +716,10 @@ footer p:active {
     text-decoration: underline;
 }
 
+.form-row-btns {
+    margin-top: 30px;
+    align-items: flex-end;
+}
 
 /* Map */
 .map-container {

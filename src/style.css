@@ -683,8 +683,9 @@ form input {
     width: 100%;
     padding: 14px;
     border: none;
+    /* border: 1px solid var(--white-color); */
     border-radius: 7px;
-    outline: none;
+    outline: 1px solid var(--white-color);
     margin: 6px 0 15px 0;
     /* cursor: pointer; */
 }
@@ -695,6 +696,10 @@ form input:focus {
 
 form input::placeholder {
     opacity: 30%;
+}
+
+form input.err {
+    outline: 1px solid var(--red-color);
 }
 
 form p {

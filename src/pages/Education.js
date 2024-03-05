@@ -5,6 +5,7 @@ import ScrollTexts from '../components/ScrollTexts';
 import GallerrySmall from '../components/GallerySmall';
 import TextBlock from '../components/TextBlock';
 import FAQs from '../components/FAQs';
+import FormBlock from '../components/FormBlock';
 
 export default function Education() {
     return (
@@ -166,6 +167,19 @@ export default function Education() {
                         answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi dicta distinctio consectetur dignissimos quas consequuntur, illum placeat eius vitae voluptates voluptatem aliquam non aspernatur itaque ipsam. Quod ea ab corporis praesentium quam consectetur.",
                     },
                 ]} />
+            <FormBlock
+                titles={[
+                    {
+                        title: "У вас остались вопросы?",
+                        blue: false,
+                    },
+                    {
+                        title: "Смело пишите нам!",
+                        blue: true,
+                    }
+                ]}
+                imgLink="./images/form-left.png"
+                formPosition="left" />
         </div>
     )
 }

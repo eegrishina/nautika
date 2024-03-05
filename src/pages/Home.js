@@ -4,7 +4,7 @@ import TextBlock from '../components/TextBlock';
 import Journey from '../components/Journey';
 import Statistics from '../components/Statistics';
 import ChooseOneYacht from '../components/ChooseOneYacht';
-import Form from '../components/Form';
+import FormBlock from '../components/FormBlock';
 import Map from '../components/Map';
 
 export default function Home() {
@@ -51,7 +51,19 @@ export default function Home() {
                 ]}
                 btn="Оформить сертификат"
                 link="certificates" />
-            <Form />
+            <FormBlock
+                titles={[
+                    {
+                        title: "Заполните форму и получите",
+                        blue: false,
+                    },
+                    {
+                        title: "скидку на первое посещение",
+                        blue: true,
+                    }
+                ]}
+                imgLink="./images/form-right.png"
+                formPosition="right" />
             <Map />
         </div>
     )

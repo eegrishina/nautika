@@ -6,8 +6,8 @@ export default function NoPage() {
         <div className='container'>
             <div className='main-info'>
                 <div className='main-column'>
-                    <small>Кажется, вы сбились с курса. Но не переживайте, <br></br>мы готовы помочь вам!</small>
-                    <img className='main-img' src='./images/404upd.png' alt=''></img>
+                    <small>Кажется, вы сбились с курса. Но не переживайте, мы готовы помочь вам!</small>
+                    <img className='main-img' src='./images/nopage.png' alt=''></img>
                     <button className='line-btn'><Link to="/">Вернуться на главную</Link></button>
                 </div>
             </div>

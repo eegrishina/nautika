@@ -1017,6 +1017,30 @@ li.big {
     margin-top: 16px;
 }
 
+/* Contacts */
+.how-to-go {
+    margin-bottom: 150px;
+}
+
+.how-to-go h3 {
+    margin-bottom: 50px;
+}
+
+.how-flex {
+    display: flex;
+    gap: 30px;
+}
+
+.how-block {
+    background-color: var(--white-color);
+    padding: 30px;
+}
+
+.how-block a {
+    text-decoration: underline;
+    color: var(--blue-color);
+}
+
 /* -----Page 404----- */
 .line-btn {
     background-color: inherit;

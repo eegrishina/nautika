@@ -7,8 +7,8 @@
     --bg-color: #EBF0FA;
     --white-color: #FBFBFB;
     --red-color: #D00000;
-    --red-color-hover: #E80000;
-    --red-color-active: #B70A0A;
+    --red-color-hover: #FB2525;
+    --red-color-active: #A61010;
 }
 
 * {
@@ -208,15 +208,27 @@ footer p:active {
     position: relative;
 }
 
-.main-column {
+.main-column,
+.main-info-flex {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.main-column small {
+.main-info-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-info-flex h1 {
+    text-align: left;
+}
+
+.main-info small {
     font-size: 18px;
     width: 300px;
+    display: inline-block;
 }
 
 .main-img {
@@ -225,10 +237,16 @@ footer p:active {
     border-radius: 7px;
 }
 
-.main-btnblock {
+.main-info .main-btnblock {
     width: 300px;
     display: flex;
     justify-content: right;
+}
+
+.main-info-flex .main-btnblock {
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
 }
 
 .main-btn {
@@ -251,6 +269,23 @@ footer p:active {
 .main-btn:active {
     outline: none;
     background-color: var(--red-color-active);
+}
+
+.main-btn.white {
+    background-color: inherit;
+    color: var(--red-color);
+    border: 1.64px solid var(--red-color);
+    margin-left: 30px;
+}
+
+.main-btn.white:hover {
+    background-color: #FFE5E5;
+}
+
+.main-btn.white:active {
+    border: 1.64px solid var(--red-color-active);
+    color: var(--red-color-active);
+    background-color: inherit;
 }
 
 /* Textblock */
@@ -984,6 +1019,7 @@ li.big {
 
 /* -----Page 404----- */
 .line-btn {
+    background-color: inherit;
     color: var(--red-color);
     font-size: 14px;
     line-height: 20px;
@@ -993,4 +1029,12 @@ li.big {
     outline: none;
     text-align: right;
     width: 300px;
+}
+
+.line-btn:hover {
+    color: var(--red-color-hover);
+}
+
+.line-btn:active {
+    color: var(--red-color-active);
 }

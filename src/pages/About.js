@@ -1,13 +1,17 @@
 import React from 'react';
-import FirstScreen from '../components/FirstScreen';
+import FirstScreen2 from '../components/FirstScreen2';
 
 export default function About() {
     return (
         <div className='container'>
-            <FirstScreen imgPath='./images/main-ship-about.png'
+            <FirstScreen2 imgPath='./images/main-ship-about.png'
                 title="знакомство с наутикой"
                 small="Давайте узнаем друг друга немного ближе"
-                btn="Получить консультацию" />
+                btns={[
+                    {
+                        text: "Получить консультацию",
+                    }
+                ]} />
         </div>
     )
 }

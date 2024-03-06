@@ -1,13 +1,17 @@
 import React from 'react';
-import FirstScreen from '../components/FirstScreen';
+import FirstScreen2 from '../components/FirstScreen2';
 
 export default function Certificates() {
     return (
         <div className='container'>
-            <FirstScreen imgPath='./images/main-ship-certificates.png'
+            <FirstScreen2 imgPath='./images/main-ship-certificates.png'
                 title="подарочные сертификаты"
-                small="Подарите своим близким незабываемые впечатления."
-                btn="Оформить сертификат" />
+                small="Подарите своим близким незабываемые впечатления"
+                btns={[
+                    {
+                        text: "Оформить сертификат",
+                    }
+                ]} />
         </div>
     )
 }

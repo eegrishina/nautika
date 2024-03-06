@@ -13,13 +13,26 @@ export default function Form() {
     const [phone, setPhone] = useState("");
     const [errPhone, setErrPhone] = useState();
 
+    const formLS = JSON.parse(localStorage.getItem('form'));
+    const arrayForm = [];
+    if (formLS) {
+        formLS.forEach(item => arrayForm.push(item));
+    }
+
     function goToThanksPage(e) {
         e.preventDefault();
 
         if (errName || errLastname || errPhone || errEmail) return;
         if (typeof (errName) === "undefined" || typeof (errLastname) === "undefined" || typeof (errPhone) === "undefined" || typeof (errEmail) === "undefined") return;
 
-        // console.log("name: " + name + ", lastname: " + lastname + ", phone: " + phone + ", email: " + email);
+        const formData = {
+            name,
+            lastname,
+            phone,
+            email,
+        }
+        arrayForm.push(formData);
+        localStorage.setItem('form', JSON.stringify(arrayForm));
 
         window.location.href = './thanks';
     }
@@ -38,11 +51,6 @@ export default function Form() {
         setEmail(e.target.value);
         setErrEmail(email.length === 0);
     }
-
-    // function handleSubmit(e) {
-    //     e.preventDefault();
-    //     console.log("name: " + name + ", lastname: " + lastname + ", phone: " + phone + ", email: " + email);
-    // }
 
     return (
         <form name="form" action="" method="get">
@@ -94,9 +102,8 @@ export default function Form() {
 
             <div className="form-row form-row-btns">
                 <p>Я принимаю <Link to="/privacy"><span>политику обработки персональных данных</span></Link></p>
-                <button className="main-btn" id="submit" 
+                <button className="main-btn" id="submit"
                     onClick={goToThanksPage}>Отправить форму</button>
-                {/* добавить функционал по сохранению формы в локале */}
             </div>
         </form>
     )

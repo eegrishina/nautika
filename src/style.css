@@ -765,6 +765,8 @@ form p {
 .map-container {
     display: flex;
     margin-bottom: 150px;
+    gap: 30px;
+    position: relative;
 }
 
 .map-info {
@@ -772,8 +774,15 @@ form p {
     height: 373px;
     padding: 30px;
     border-radius: 7px;
-    margin-right: 30px;
     background-color: var(--white-color);
+}
+
+.map-info.absolute {
+    position: absolute;
+    top: 105px;
+    left: 70px;
+    z-index: 2;
+    width: 306px;
 }
 
 .info {
@@ -790,11 +799,20 @@ form p {
     margin-bottom: 12px;
 }
 
+.map-info button {
+    width: 242px;
+}
+
 .map-container iframe {
     width: 770px;
-    height: 373px;
+    height: 100%;
     border-radius: 7px;
     border: 1px solid var(--blue-color);
+}
+
+.map-container iframe.absolute {
+    height: 583px;
+    width: 1170px;
 }
 
 /* -----Education Page----- */
@@ -1034,6 +1052,7 @@ li.big {
 .how-block {
     background-color: var(--white-color);
     padding: 30px;
+    border-radius: 7px;
 }
 
 .how-block a {

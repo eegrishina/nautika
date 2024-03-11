@@ -3,10 +3,9 @@ import { useState } from 'react';
 import ScrollOneText from "./ScrollOneText";
 
 export default function ScrollTexts({ mainTitle, props }) {
-    // let maxCount = Math.floor(window.innerWidth / (props.length * 100));
-    // console.log(window.innerWidth, props.length, maxCount);
     const [count, setCount] = useState(0);
     const [position, setPosition] = useState(0);
+    const maxCount = props.length;
 
     function handleClickLeft() {
         setCount(count + 1);
@@ -40,7 +39,7 @@ export default function ScrollTexts({ mainTitle, props }) {
                     <i className='fas fa-arrow-right'></i>
                 </button>
                 <button className='circle-btn' id='right'
-                    disabled={count >= 2}
+                    disabled={count >= maxCount - 2}
                     onClick={handleClickLeft}>
                     <i className='fas fa-arrow-right'></i>
                 </button>

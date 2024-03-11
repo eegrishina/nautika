@@ -31,7 +31,7 @@ export default function Footer() {
                 <div>
                     <h4>Контакты</h4>
                     <ul>
-                        <li>+ 7 869 468 48 68</li>
+                        <li>+7 869 468 48 68</li>
                         <li><a href="mailto:nautica@mail.ru">nautica@mail.ru</a></li>
                     </ul>
                     <div className="footer-icons">

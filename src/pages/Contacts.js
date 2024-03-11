@@ -1,5 +1,8 @@
 import React from 'react';
 import FirstScreen2 from '../components/FirstScreen2';
+import HowToGo from '../components/HowToGo';
+import Map from '../components/Map';
+import FormBlock from '../components/FormBlock';
 
 export default function Contacts() {
     return (
@@ -11,7 +14,26 @@ export default function Contacts() {
                     {
                         text: "Заказать обратный звонок",
                     }
-                ]} />
+                ]}
+                anchorLink="/contacts#anchor-form" />
+            <HowToGo />
+            <Map
+                classInfo="absolute"
+                anchorLink="/contacts#anchor-form" />
+            <FormBlock
+                titles={[
+                    {
+                        title: "У вас остались вопросы?",
+                        blue: false,
+                    },
+                    {
+                        title: "Смело пишите нам!",
+                        blue: true,
+                    }
+                ]}
+                imgLink="./images/form-left.png"
+                formPosition="left"
+                anchorLink="/contacts#anchor-form" />
         </div>
     )
 }

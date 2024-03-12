@@ -844,6 +844,8 @@ form p {
     margin-bottom: 28px;
     width: 670px;
     transition: font-size 0.3s ease-in;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-container:last-child {
@@ -854,9 +856,29 @@ form p {
     box-shadow: 0px 0px 10px 0px #2892D71F;
 }
 
+.card-img {
+    min-width: 168px;
+    position: relative;
+}
+
+.card-img img {
+    position: absolute;
+    right: 0;
+    width: 123px;
+    height: 170px;
+    opacity: 80%;
+}
+
+.card-container:hover img {
+    top: 26px;
+    right: 26px;
+    transform: scale(150%);
+}
+
 .card-container h5,
-.card-container .btn-red-arrow {
-    transition: font-size 0.3s ease-in;
+.card-container .btn-red-arrow,
+.card-container img {
+    transition: all 0.4s linear;
     animation: opacityBtn 0.3s ease-in;
 }
 
@@ -883,7 +905,6 @@ form p {
 .card-btns,
 .card-btns-pills {
     display: flex;
-    flex-direction: row;
 }
 
 .card-btns {
@@ -893,6 +914,17 @@ form p {
 
 .pill {
     margin-right: 10px;
+}
+
+.card-btns.with-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-btns.with-img .btn-red-arrow {
+    text-align: left;
+    margin-top: 54px;
 }
 
 /* -----Scroll Text-----*/

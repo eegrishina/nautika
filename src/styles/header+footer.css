@@ -1,0 +1,91 @@
+/* -----Header----- */
+.navbar {
+    position: fixed;
+    z-index: 99999;
+    margin: 0 auto;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: var(--bg-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.header-logo {
+    height: 56px;
+    width: 146px;
+}
+
+.header-menu,
+.header-menu li,
+.header-phone,
+footer p {
+    font-size: 14px;
+}
+
+.header-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.header-menu li a:hover,
+.footer-column li a:hover {
+    color: var(--blue-color);
+}
+
+.header-phone {
+    font-weight: 700;
+}
+
+/* -----Footer----- */
+footer {
+    padding-bottom: 55px;
+}
+
+footer hr {
+    margin-bottom: 28px;
+}
+
+footer p {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 63px;
+    opacity: 60%;
+}
+
+footer p:hover {
+    color: var(--red-color-hover);
+}
+
+footer p:active {
+    color: var(--red-color-active);
+}
+
+.footer-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 1.7rem;
+}
+
+.footer-column li {
+    font-size: 18px;
+    opacity: 60%;
+}
+
+.footer-icons {
+    margin-top: 28px;
+}
+
+.footer-icons img {
+    height: 26px;
+    width: 26px;
+    margin-right: 12px;
+}

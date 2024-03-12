@@ -1,0 +1,165 @@
+/* Main Red Button */
+.main-btn {
+    height: 52px;
+    background-color: var(--red-color);
+    border-radius: 7px;
+    color: var(--white-color);
+    font-size: 14px;
+    padding: 16px 26px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.main-btn:hover {
+    background-color: var(--red-color-hover);
+}
+
+.main-btn:active {
+    outline: none;
+    background-color: var(--red-color-active);
+}
+
+.main-btn.white {
+    background-color: inherit;
+    color: var(--red-color);
+    border: 1.64px solid var(--red-color);
+    margin-left: 30px;
+}
+
+.main-btn.white:hover {
+    background-color: #FFE5E5;
+}
+
+.main-btn.white:active {
+    border: 1.64px solid var(--red-color-active);
+    color: var(--red-color-active);
+    background-color: inherit;
+}
+
+/* Circle Red Button */
+.circle-btn {
+    height: 52px;
+    width: 52px;
+    border: 1.64px solid var(--red-color);
+    border-radius: 50%;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.circle-btn.btn-link {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    opacity: 30%;
+}
+
+.circle-btn.btn-link:hover {
+    opacity: 1;
+}
+
+.circle-btn i {
+    font-size: 26px;
+    color: var(--red-color);
+}
+
+.circle-btn.btn-link i {
+    transform: rotate(-45deg);
+}
+
+.circle-btn#right {
+    margin-left: 12px;
+}
+
+.circle-btn#left i {
+    transform: rotate(180deg);
+}
+
+.circle-btn:disabled {
+    opacity: 30%;
+    cursor: auto;
+}
+
+.scroll-btn {
+    margin-top: 30px;
+}
+
+/* Pills */
+.top-btn {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.top-btn button {
+    margin-right: 14px;
+    background-color: var(--white-color);
+    border: solid 1px var(--blue-color);
+    color: var(--blue-color);
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+.top-btn button:hover {
+    background-color: #EBF0FA;
+}
+
+.top-btn button.active {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.pill {
+    border: 1px solid var(--blue-color);
+    border-radius: 30px;
+    padding: 8px 20px;
+    background-color: inherit;
+    color: var(--blue-color);
+    margin: 8px 10px 0 0;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.pill.free {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+/* String Links */
+.bottom-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bottom-btn p a {
+    color: var(--blue-color);
+    text-decoration: underline;
+}
+
+.btn-red-arrow {
+    color: var(--red-color);
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+
+.btn-red-arrow:hover {
+    color: var(--red-color-hover);
+}
+
+.btn-red-arrow:active {
+    color: var(--red-color-active);
+}
+
+.btn-red-arrow i {
+    font-size: 14px;
+    padding-left: 6px;
+    vertical-align: middle;
+}

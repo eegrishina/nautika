@@ -34,6 +34,7 @@ export default function Education() {
                         cardPrice: "4 500 ₽",
                         cardTime: "2 часа",
                         cardBtn: "Записаться на тренировку",
+                        imgVisible: "none",
                     },
                     {
                         cardTitle: "Почасовое обучение",
@@ -41,6 +42,7 @@ export default function Education() {
                         cardPrice: "3 000 ₽ / час",
                         cardTime: "от 2-х часов",
                         cardBtn: "Записаться на тренировку",
+                        imgVisible: "none",
                     },
                     {
                         cardTitle: "Базовый курс",
@@ -48,6 +50,7 @@ export default function Education() {
                         cardPrice: "19 000 ₽",
                         cardTime: "8 часов",
                         cardBtn: "Записаться на тренировку",
+                        imgVisible: "none",
                     }
                 ]} />
             <ScrollTexts

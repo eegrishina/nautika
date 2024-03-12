@@ -34,6 +34,7 @@ export default function Walks() {
                         cardPrice: "3 000 ₽ / час",
                         cardTime: "до 4-х человек",
                         cardBtn: "Записаться на тренировку",
+                        imgVisible: "none",
                     },
                     {
                         cardTitle: "круиз по обскому морю",
@@ -41,6 +42,7 @@ export default function Walks() {
                         cardPrice: "15 000 ₽",
                         cardTime: "до 4-х человек",
                         cardBtn: "Записаться на тренировку",
+                        imgVisible: "none",
                     },
                 ]} />
             <ScrollTexts

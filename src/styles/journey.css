@@ -1,0 +1,47 @@
+.journey,
+.journey-flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.journey-flexbox {
+    flex-direction: column;
+}
+
+.side-img {
+    max-width: 570px;
+    max-height: 570px;
+}
+
+.journey-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.journey-container {
+    height: 158px;
+    width: 270px;
+    background-color: var(--white-color);
+    margin: 30px 30px 0 0;
+    padding: 18px 14px;
+}
+
+.journey-container:hover,
+.journey-container:hover h4 {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+.journey-container p {
+    font-size: 16px;
+}
+
+.journey-container small {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: right;
+    margin-top: 16px;
+}

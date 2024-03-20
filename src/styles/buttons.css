@@ -2,7 +2,6 @@
 .main-btn {
     height: 52px;
     background-color: var(--red-color);
-    border-radius: 7px;
     color: var(--white-color);
     font-size: 14px;
     padding: 16px 26px;
@@ -89,13 +88,19 @@
 .top-btn {
     display: flex;
     margin-bottom: 30px;
+    border: 1.64px solid var(--blue-color);
+    border-radius: 50px;
+    padding: 6px;
+    max-width: 358px;
 }
 
 .top-btn button {
     margin-right: 14px;
-    background-color: var(--white-color);
-    border: solid 1px var(--blue-color);
-    color: var(--blue-color);
+    background-color: inherit;
+    border: none;
+    /* background-color: var(--white-color);
+    border: solid 1px var(--blue-color); */
+    color: var(--dark-color-title);
     border-radius: 30px;
     padding: 12px 30px;
     font-size: 18px;
@@ -110,7 +115,6 @@
 .top-btn button.active {
     background-color: var(--blue-color);
     color: var(--white-color);
-    font-weight: 700;
 }
 
 .pill {

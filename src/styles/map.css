@@ -1,0 +1,50 @@
+/* Map */
+.map-container {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.map-info {
+    width: 370px;
+    height: 373px;
+    padding: 30px;
+    background-color: var(--white-color);
+}
+
+.map-info.absolute {
+    position: absolute;
+    top: 105px;
+    left: 70px;
+    z-index: 2;
+    width: 306px;
+}
+
+.info {
+    margin: 21px 0;
+}
+
+.map-info small {
+    font-size: 13px;
+    opacity: 60%;
+}
+
+.map-info p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.map-info button {
+    width: 242px;
+}
+
+.map-container iframe {
+    width: 770px;
+    height: 100%;
+    border: 1px solid var(--blue-color);
+}
+
+.map-container iframe.absolute {
+    height: 583px;
+    width: 1170px;
+}

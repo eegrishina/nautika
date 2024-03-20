@@ -1,0 +1,49 @@
+.main-info {
+    top: 72px;
+    margin-bottom: 72px;
+    position: relative;
+}
+
+.main-column,
+.main-info-flex,
+.main-info-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main-column,
+.main-info-flex {
+    align-items: flex-end;
+}
+
+.main-info-column {
+    flex-direction: column;
+}
+
+.main-info-flex h1 {
+    text-align: left;
+}
+
+.main-info small {
+    font-size: 18px;
+    width: 300px;
+    display: inline-block;
+}
+
+.main-img {
+    height: 684px;
+    width: 570px;
+}
+
+.main-info .main-btnblock {
+    width: 300px;
+    display: flex;
+    justify-content: right;
+}
+
+.main-info-flex .main-btnblock {
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+}

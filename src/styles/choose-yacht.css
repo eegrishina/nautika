@@ -1,0 +1,27 @@
+.choose-yacht {
+    display: flex;
+}
+
+.choose-yacht img {
+    margin-right: 30px;
+}
+
+.choose-top,
+.choose-bottom,
+.choose-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.choose-top,
+.choose-bottom {
+    background-color: var(--white-color);
+    padding: 30px;
+    font-size: 16px;
+    height: 100%;
+}
+
+.choose-top {
+    margin-bottom: 30px;
+}

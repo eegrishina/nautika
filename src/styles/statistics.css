@@ -1,0 +1,48 @@
+.statistics,
+.statistics-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics-left {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.statistics-left p {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    width: 500px;
+}
+
+.statistics-left button {
+    margin-bottom: 30px;
+}
+
+.statistics-right {
+    max-width: 570px;
+}
+
+.statistics-right p {
+    font-size: 18px;
+}
+
+.statistics-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.numbers-item {
+    width: 270px;
+    margin: 0 15px 30px 0;
+}
+
+.numbers-item h5 {
+    font-size: 70px;
+}
+
+.numbers-item p {
+    font-size: 16px;
+}

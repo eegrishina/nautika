@@ -1,0 +1,152 @@
+/* Services Page */
+.services-flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-flexbox {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: var(--white-color);
+}
+
+.price-flexbox:hover {
+    box-shadow: 0px 0px 10px 0px #2892D71F;
+}
+
+.price-flexbox:last-child {
+    margin-bottom: 0;
+}
+
+.price-flexbox h5 {
+    font-size: 40px;
+}
+
+.priceitem-flexbox {
+    display: flex;
+    align-items: flex-end;
+}
+
+.priceitem-box {
+    width: 270px;
+    margin-right: 114px;
+}
+
+.priceitem-box h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.priceitem-box p {
+    font-size: 16px;
+    opacity: 60%;
+}
+
+
+/* Education, Walks and Rent Pages */
+.price-cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-cards-left {
+    width: 370px;
+}
+
+.price-cards-left p {
+    font-size: 18px;
+    margin: 30px 0 20px 0;
+}
+
+.price-cards-left small {
+    font-size: 13px;
+    line-height: 17.71px;
+    opacity: 60%;
+}
+
+.card-container {
+    background-color: var(--white-color);
+    padding: 36px;
+    margin-bottom: 28px;
+    width: 670px;
+    transition: font-size 0.3s ease-in;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container:last-child {
+    margin-bottom: 0;
+}
+
+.card-container:hover {
+    box-shadow: 0px 0px 10px 0px #2892D71F;
+}
+
+.card-img {
+    min-width: 168px;
+    position: relative;
+}
+
+.card-img img {
+    position: absolute;
+    right: 0;
+    width: 123px;
+    height: 170px;
+    opacity: 80%;
+}
+
+.card-container:hover img {
+    top: 26px;
+    right: 26px;
+    transform: scale(150%);
+}
+
+.card-container h5,
+.card-container .btn-red-arrow,
+.card-container img {
+    transition: all 0.4s linear;
+    animation: opacityBtn 0.3s ease-in;
+}
+
+@keyframes opacityBtn {
+
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.card-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.card-btns,
+.card-btns-pills {
+    display: flex;
+}
+
+.card-btns {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-btns.with-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-btns.with-img .btn-red-arrow {
+    text-align: left;
+    margin-top: 54px;
+}

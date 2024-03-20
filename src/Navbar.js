@@ -6,7 +6,7 @@ export default function Navbar() {
         <div className="navbar">
             <div className='header'>
                 <Link to="/">
-                    <img className='header-logo' src="./images/icons/logo.png" alt="Nautika"></img>
+                    <img className='header-logo' src="./images/icons/new-logo.png" alt="Nautika"></img>
                 </Link>
                 <nav className='header-menu'>
                     <ul>

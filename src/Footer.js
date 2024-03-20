@@ -7,7 +7,7 @@ export default function Footer() {
             <hr></hr>
             <div className="footer-column">
                 <Link to="/">
-                    <img className='header-logo' src="./images/icons/logo.png" alt="Nautika"></img>
+                    <img className='header-logo' src="./images/icons/new-logo.png" alt="Nautika"></img>
                 </Link>
                 <nav>
                     <h4>Навигация</h4>

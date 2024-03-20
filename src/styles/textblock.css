@@ -1,0 +1,28 @@
+.textblock-title h2:first-child {
+    text-align: right;
+}
+
+.textblock-title h2:last-child {
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+.textblock-info,
+.textblock-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textblock-info {
+    align-items: flex-end;
+}
+
+.textblock-text {
+    font-size: 18px;
+    line-height: 23.4px;
+}
+
+.textblock-text p:last-child {
+    margin-left: 30px;
+    margin-right: 119px;
+}

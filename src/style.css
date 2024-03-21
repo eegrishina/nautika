@@ -13,6 +13,7 @@
 @import url(/src/styles/scroll-text.css);
 @import url(/src/styles/statistics.css);
 @import url(/src/styles/textblock.css);
+@import url(/src/styles/yacht-detail.css);
 
 :root {
     --blue-color: #2892D7;

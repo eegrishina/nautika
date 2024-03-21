@@ -1,0 +1,68 @@
+.yacht-detail {
+    display: flex;
+    position: relative;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.detail-big-img {
+    width: 370px;
+    height: 532px;
+}
+
+.detail-small-img {
+    width: 270px;
+    height: 270px;
+}
+
+.detail-textblock {
+    width: 470px;
+}
+
+.detail-textblock h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.detail-textblock h4:first-child {
+    margin-top: 60px;
+    opacity: 30%;
+}
+
+.detail-textblock p {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+.detail-textblock ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 69px;
+    margin-bottom: 50px;
+}
+
+.detail-textblock ul li {
+    padding: 0;
+    font-size: 16px;
+    opacity: 60%;
+}
+
+.detail-textblock .scroll-btn {
+    position: absolute;
+    bottom: 30px;
+}
+
+.detail-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.counter {
+    font-size: 13px;
+    opacity: 60%;
+    text-align: right;
+}

@@ -8,7 +8,7 @@ export default function YachtDetail({ details }) {
         .filter(i => i.id === counter)
         .map(i => {
             return (
-                <p key={i.id}>{i.info}</p>
+                <p key={i.id}><span className='blue'>{i.name}</span>{i.info}</p>
             )
         })
 

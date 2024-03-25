@@ -14,12 +14,10 @@ export default function Contacts() {
                     {
                         text: "Заказать обратный звонок",
                     }
-                ]}
-                anchorLink="/contacts#anchor-form" />
+                ]} />
             <HowToGo />
             <Map
-                classInfo="absolute"
-                anchorLink="/contacts#anchor-form" />
+                classInfo="absolute" />
             <FormBlock
                 titles={[
                     {
@@ -32,8 +30,7 @@ export default function Contacts() {
                     }
                 ]}
                 imgLink="./images/form-left.png"
-                formPosition="left"
-                anchorLink="/contacts#anchor-form" />
+                formPosition="left" />
         </div>
     )
 }

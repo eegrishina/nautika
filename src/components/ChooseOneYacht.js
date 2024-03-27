@@ -7,7 +7,7 @@ export default function ChooseOneYacht() {
     const [yachtName, setYachtName] = useState("Луч");
     const [yachtBlock, setYachtBlock] = useState(
         <div className="top-text">
-            <h4>Яхта <span className="blue">«Луч»</span></h4>
+            <h6>Яхта <span className="blue">«Луч»</span></h6>
             <p>«Луч» — олимпийский класс яхт, предназначенный для одного человека, который одновременно занимается и управлением яхтой, и настройкой паруса. Открытый кокпит и легкий вес делают его идеальным выбором для тренировок, где важны реакция, баланс и взаимодействие с ветром и волнами.</p>
         </div>
     );
@@ -32,7 +32,7 @@ export default function ChooseOneYacht() {
                 y.active = true
                 return (
                     <div key={y.id} className="top-text">
-                        <h4>Яхта <span className="blue">«{y.name}»</span></h4>
+                        <h6>Яхта <span className="blue">«{y.name}»</span></h6>
                         <p>{y.description}</p>
                     </div>
                 )
@@ -51,7 +51,7 @@ export default function ChooseOneYacht() {
                 </div>
                 <div className="choose-bottom">
                     <div className="bottom-text">
-                        <h4>Идеальная погода для яхты <span className='blue'>«{yachtName}»</span></h4>
+                        <h6>Идеальная погода для яхты <span className='blue'>«{yachtName}»</span></h6>
                         <p>Сегодня отличная возможность потренироваться на швертботе «{yachtName}». Не забудьте прихватить с собой крем SPF, чтобы ваше плавание было приятным и безопасным, а остальное — за нами!</p>
                     </div>
                     <div className="bottom-btn">

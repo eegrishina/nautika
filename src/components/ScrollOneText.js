@@ -4,7 +4,7 @@ export default function ScrollOneText({ title, text }) {
     return (
         <div className="one-text-container">
             <hr></hr>
-            <h4>{title}</h4>
+            <h5>{title}</h5>
             <p>{text}</p>
         </div>
     )

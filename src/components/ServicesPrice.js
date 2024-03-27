@@ -14,7 +14,7 @@ export default function ServicesPrice({ title, path, data }) {
 
     return (
         <div className="price-flexbox">
-            <h5>{title}</h5>
+            <h4>{title}</h4>
             <div className="priceitem-flexbox">
                 {listData}
             </div>

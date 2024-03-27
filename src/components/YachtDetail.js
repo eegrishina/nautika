@@ -29,9 +29,9 @@ export default function YachtDetail({ details }) {
         <div className='yacht-detail'>
             <img className='detail-big-img' src={srcBigImg} alt=''></img>
             <div className='detail-textblock'>
-                <h4>О нашем флоте</h4>
+                <h5>О нашем флоте</h5>
                 {aboutYacht}
-                <h4>Параметры</h4>
+                <h5>Параметры</h5>
                 <ul>{listLi}</ul>
                 <div className='scroll-btn'>
                     <button className='circle-btn' id='left'

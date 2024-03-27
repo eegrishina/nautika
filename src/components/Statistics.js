@@ -14,19 +14,19 @@ export default function Statistics() {
                 <p>В Наутике вы не просто учитесь управлять яхтой — вы погружаетесь в мир яхтинга и становитесь частью яхтенного сообщества. Пробудите в себе морского исследователя и заживите в ритме волн и ветра.</p>
                 <div className="statistics-numbers">
                     <div className="numbers-item">
-                        <h5>6</h5>
+                        <h2>6</h2>
                         <p>лет успешной работы</p>
                     </div>
                     <div className="numbers-item">
-                        <h5>&#62;500</h5>
+                        <h2>&#62;500</h2>
                         <p>довольных клиентов</p>
                     </div>
                     <div className="numbers-item">
-                        <h5>&#62;1000</h5>
+                        <h2>&#62;1000</h2>
                         <p>часов морской практики</p>
                     </div>
                     <div className="numbers-item">
-                        <h5>10</h5>
+                        <h2>10</h2>
                         <p>видов предложений</p>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ export default function PriceOneCard({ cardTitle, cardText, cardPrice, cardTime,
             }}
         >
             <div className="card-cols">
-                <h5 style={{ fontSize: size }}>{cardTitle}</h5>
+                <h4 style={{ fontSize: size }}>{cardTitle}</h4>
                 <p>{cardText}</p>
                 <div className={imgVisible === "block" ? "card-btns with-img" : "card-btns"}>
                     <div className="card-btns-pills">

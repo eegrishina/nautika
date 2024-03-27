@@ -31,7 +31,7 @@ export default function GallerrySmall({ title, text, images }) {
             </div>
 
             <div className='gallery-photo-textblock'>
-                <h4>{title}</h4>
+                <h6>{title}</h6>
                 <p>{text}</p>
                 <div className='scroll-btn'>
                     <button className='circle-btn' id='left'

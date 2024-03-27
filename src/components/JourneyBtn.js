@@ -10,7 +10,7 @@ export default function JourneyBtn({ title, text, path }) {
             onMouseOver={() => setHoverClass(true)}
             onMouseOut={() => setHoverClass(false)}
         >
-            <h4>{title}</h4>
+            <h6>{title}</h6>
             <p>{text}</p>
             {hoverClass && <small><Link to={path}>Подробнее</Link></small>}
         </div>

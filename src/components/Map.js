@@ -4,7 +4,7 @@ export default function Map({ classInfo, anchorLink }) {
     return (
         <div className="map-container">
             <div className={classInfo ? "map-info " + classInfo : "map-info"}>
-                <h4>Свяжитесь с нами</h4>
+                <h6>Свяжитесь с нами</h6>
                 <div className="info">
                     <small>Наш адрес</small>
                     <p>г. Новосибирск, <br></br>ул. Бердский тупик 9/1</p>

@@ -4,7 +4,7 @@ import Form from "./Form";
 export default function FormBlock({ titles, imgLink, formPosition }) {
     const title = titles.map((i, idx) => {
         return (
-            <h3 key={idx} className={i.blue ? "blue" : undefined}>{i.title}</h3>
+            <span key={idx} className={i.blue ? "blue" : undefined}>{i.title}</span>
         )
     })
 
@@ -12,7 +12,7 @@ export default function FormBlock({ titles, imgLink, formPosition }) {
         (formPosition === 'right' ? (
             <div className="form-container">
                 <div className="form-info">
-                    {title}
+                    <h3>{title}</h3>
                     <img src={imgLink} alt=""></img>
                 </div>
                 <Form />
@@ -20,7 +20,7 @@ export default function FormBlock({ titles, imgLink, formPosition }) {
         ) : (
             <div className="form-container">
                 <div className="form-info">
-                    {title}
+                    <h3>{title}</h3>
                     <Form />
                 </div>
                 <img src={imgLink} alt=""></img>

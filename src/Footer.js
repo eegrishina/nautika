@@ -10,7 +10,7 @@ export default function Footer() {
                     <img className='header-logo' src="./images/icons/new-logo.png" alt="Nautika"></img>
                 </Link>
                 <nav>
-                    <h4>Навигация</h4>
+                    <h6>Навигация</h6>
                     <ul>
                         <li><Link to='/services'>Услуги</Link></li>
                         <li><Link to='/certificates'>Сертификаты</Link></li>
@@ -20,7 +20,7 @@ export default function Footer() {
                     </ul>
                 </nav>
                 <div>
-                    <h4>Адрес</h4>
+                    <h6>Адрес</h6>
                     <ul>
                         <li>г. Новосибирск</li>
                         <li>ул. Бердский тупик 9/1</li>
@@ -29,7 +29,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <h4>Контакты</h4>
+                    <h6>Контакты</h6>
                     <ul>
                         <li>+7 869 468 48 68</li>
                         <li><a href="mailto:nautica@mail.ru">nautica@mail.ru</a></li>

@@ -10,9 +10,10 @@ import FormBlock from '../components/FormBlock';
 export default function Education() {
     return (
         <div className='container'>
-            <FirstScreen imgPath='./images/main-ship-education.png'
+            <FirstScreen type="center"
+                imgPath='./images/main-ship-education.png'
                 title="Обучение яхтингу"
-                small="Ваш путь к парусному искусству начинается здесь."
+                small="Ваш путь к парусному искусству начинается здесь"
                 btn="Записаться на тренировку" />
             <PriceCards
                 mainTitles={[

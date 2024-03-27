@@ -8,9 +8,10 @@ import Map from '../components/Map';
 export default function Services() {
     return (
         <div className='container'>
-            <FirstScreen imgPath='./images/main-ship-services.png'
+            <FirstScreen type="center"
+                imgPath='./images/main-ship-services.png'
                 title="приключения под парусом"
-                small="С нами каждая морская мечта становится реальностью."
+                small="С нами каждая морская мечта становится реальностью"
                 btn="Получить консультацию" />
             <ServicesDetail />
             <GallerryBig />

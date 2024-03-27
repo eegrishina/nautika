@@ -1,5 +1,5 @@
 import React from 'react';
-import FirstScreen2 from '../components/FirstScreen2';
+import FirstScreen from '../components/FirstScreen';
 import HowToGo from '../components/HowToGo';
 import Map from '../components/Map';
 import FormBlock from '../components/FormBlock';
@@ -7,14 +7,15 @@ import FormBlock from '../components/FormBlock';
 export default function Contacts() {
     return (
         <div className='container'>
-            <FirstScreen2 imgPath='./images/main-ship-services.png'
+            <FirstScreen imgPath='./images/main-ship-services.png'
                 title="наши контакты и координаты"
                 small="Планируете посетить нас? Здесь вся информация о контактах и маршруте"
-                btns={[
-                    {
-                        text: "Заказать обратный звонок",
-                    }
-                ]} />
+                // btns={[
+                //     {
+                //         text: "Заказать обратный звонок",
+                //     }
+                // ]}
+                btn="Заказать обратный звонок" />
             <HowToGo />
             <Map
                 classInfo="absolute" />

@@ -10,9 +10,10 @@ import Map from '../components/Map';
 export default function Home() {
     return (
         <div className='container'>
-            <FirstScreen imgPath='./images/main-ship.png'
+            <FirstScreen type="center"
+                imgPath='./images/main-ship.png'
                 title="Откройте для себя парусный спорт"
-                small="Первые шаги к серьезному парусному спорту."
+                small="Первые шаги к серьезному парусному спорту"
                 btn="Записаться на тренировку" />
             <TextBlock
                 titles={[

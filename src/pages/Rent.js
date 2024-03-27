@@ -10,7 +10,8 @@ import FormBlock from '../components/FormBlock';
 export default function Rent() {
     return (
         <div className='container'>
-            <FirstScreen imgPath='./images/main-ship-rent2.png'
+            <FirstScreen type="center"
+                imgPath='./images/main-ship-rent2.png'
                 title="прокат и аренда парусных яхт"
                 small="Аренда яхт для ваших морских путешествий"
                 btn="Забронировать яхту" />

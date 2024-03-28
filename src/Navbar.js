@@ -1,13 +1,17 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+    const [burgerStyle, setBurgerStyle] = useState(false);
+
     return (
         <div className="navbar">
-            <div className='header'>
+            <div className={burgerStyle ? 'header burger-visible' : 'header'}>
                 <Link to="/">
                     <img className='header-logo' src="./images/icons/new-logo.png" alt="Nautika"></img>
                 </Link>
+                <div className="burger-menu" onClick={() => setBurgerStyle(!burgerStyle)}><span></span></div>
                 <nav className='header-menu'>
                     <ul>
                         <li><Link to='/services'>Услуги</Link></li>

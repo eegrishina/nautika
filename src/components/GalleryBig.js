@@ -41,7 +41,7 @@ export default function GallerryBig() {
                     <img src='./images/gallery-big2.png' alt=''></img>
                     <div className='gallery-photo-textblock'>
                         <h6>Внесите краски в свою жизнь и в жизнь своих близких</h6>
-                        <p>У нас вы можете преобрести подарочные сертификаты на любую из предоставляемых услуг. Подарите своим близким незабываемые морские впечатления!</p>
+                        <p className='card'>У нас вы можете преобрести подарочные сертификаты на любую из предоставляемых услуг. Подарите своим близким незабываемые морские впечатления!</p>
                         <Link to='/certificates'><button className='main-btn'>Оформить сертификат</button></Link>
                     </div>
                 </div>

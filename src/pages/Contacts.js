@@ -7,14 +7,9 @@ import FormBlock from '../components/FormBlock';
 export default function Contacts() {
     return (
         <div className='container'>
-            <FirstScreen imgPath='./images/main-ship-services.png'
+            <FirstScreen imgPath='./images/main-ship-contacts.png'
                 title="наши контакты и координаты"
                 small="Планируете посетить нас? Здесь вся информация о контактах и маршруте"
-                // btns={[
-                //     {
-                //         text: "Заказать обратный звонок",
-                //     }
-                // ]}
                 btn="Заказать обратный звонок" />
             <HowToGo />
             <Map

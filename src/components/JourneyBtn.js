@@ -11,7 +11,7 @@ export default function JourneyBtn({ title, text, path }) {
             onMouseOut={() => setHoverClass(false)}
         >
             <h6>{title}</h6>
-            <p>{text}</p>
+            <p className='card'>{text}</p>
             {hoverClass && <small><Link to={path}>Подробнее</Link></small>}
         </div>
     )

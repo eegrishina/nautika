@@ -11,7 +11,7 @@ export default function OneFAQ({ idx, question, answer }) {
     return (
         <li onClick={handleClick}>
             <span>{idx < 10 ? '0' + (idx + 1) : idx}</span>{question}
-            {active && <p>{answer}</p>}
+            {active && <p className='card'>{answer}</p>}
             <hr></hr>
         </li>
     )

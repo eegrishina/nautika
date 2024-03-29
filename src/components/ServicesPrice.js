@@ -6,7 +6,7 @@ export default function ServicesPrice({ title, path, data }) {
         return (
             <div key={idx} className="priceitem-box">
                 <h6>{i.title}</h6>
-                <p>{i.text}</p>
+                <p className='card'>{i.text}</p>
                 <button className={i.free ? "pill free" : "pill"}>{i.price}</button>
             </div>
         )

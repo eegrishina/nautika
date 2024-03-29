@@ -12,7 +12,7 @@ export default function YachtDetail({ details }) {
             )
         })
 
-    const listLi = details[counter - 1].list.map((i, idx) => <li key={idx}>{i}</li>)
+    const listLi = details[counter - 1].list.map((i, idx) => <li key={idx} className='card'>{i}</li>)
 
     let srcBigImg = './images/detail-img/big' + counter + '.png';
     let srcSmallImg = './images/detail-img/small' + counter + '.png';

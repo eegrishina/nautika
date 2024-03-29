@@ -15,4 +15,53 @@
 .how-block a {
     text-decoration: underline;
     color: var(--blue-color);
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.how-block a:hover {
+    color: var(--blue-color-hover);
+}
+
+.how-block a:active {
+    color: var(--blue-color-active);
+}
+
+@media (max-width: 1024px) {
+    .how-block {
+        padding: 26px;
+    }
+
+    .how-block a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .how-flex {
+        gap: 24px;
+    }
+
+    .how-block {
+        padding: 18px;
+    }
+
+    .how-block a {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 646px) {
+    .how-flex {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 460px) {
+    .how-flex {
+        display: flex;
+        flex-direction: column;
+    }
 }

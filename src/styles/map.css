@@ -1,50 +1,176 @@
-/* Map */
 .map-container {
     display: flex;
+    justify-content: space-between;
     gap: 30px;
     position: relative;
 }
 
 .map-info {
-    width: 370px;
-    height: 373px;
+    height: 365px;
     padding: 30px;
     background-color: var(--white-color);
 }
 
-.map-info.absolute {
-    position: absolute;
-    top: 105px;
-    left: 70px;
-    z-index: 2;
-    width: 306px;
+.map-info.left {
+    width: 370px;
 }
 
-.info {
-    margin: 21px 0;
+.map-info.absolute {
+    width: 300px;
+    position: absolute;
+    top: 113px;
+    left: 30px;
+    z-index: 2;
+}
+
+.map-info h6 {
+    margin-bottom: 8px;
 }
 
 .map-info small {
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 500;
     opacity: 60%;
 }
 
 .map-info p {
-    font-size: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .map-info button {
-    width: 242px;
+    margin-top: 16px;
+}
+
+.map-info h6,
+.map-info small,
+.map-info p:last-child,
+.map-info button {
+    white-space: nowrap;
+}
+
+.map.left {
+    height: 356px;
+    width: 770px;
+}
+
+.map.absolute {
+    height: 583px;
+    width: 1170px;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
 }
 
 .map-container iframe {
-    width: 770px;
-    height: 100%;
     border: 1px solid var(--blue-color);
 }
 
-.map-container iframe.absolute {
-    height: 583px;
-    width: 1170px;
+@media (max-width: 1024px) {
+
+    .map-info.absolute,
+    .map-info.left,
+    .map.left {
+        height: 332px;
+    }
+
+    .map.absolute {
+        height: 476px;
+    }
+
+    .map-info.absolute,
+    .map-info.left {
+        width: 298px;
+        padding: 26px;
+    }
+
+    .map-info.absolute {
+        top: 72px;
+        left: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .map-info.absolute,
+    .map-info.left,
+    .map.left {
+        height: 303px;
+    }
+
+    .map.absolute {
+        height: 360px;
+    }
+
+    .map-info.left,
+    .map-info.absolute {
+        max-width: 247px;
+        padding: 18px;
+    }
+
+    .map-info.absolute {
+        top: 28px;
+        left: 18px;
+    }
+
+    .map-info h6 {
+        margin-bottom: 10px;
+    }
+
+    .map-info p {
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 646px) {
+    .map-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .map-info.absolute {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .map.absolute {
+        height: 303px;
+    }
+}
+
+@media (max-width: 460px) {
+    .map-container {
+        flex-direction: column;
+    }
+
+    .info {
+        white-space: nowrap;
+    }
+
+    .map-info.absolute,
+    .map-info.left,
+    .map.absolute,
+    .map.left {
+        width: 92vw;
+    }
+
+    .map-info.left,
+    .map-info.absolute {
+        height: 283px;
+        min-width: 92vw;
+    }
+}
+
+@media (max-width: 327px) {
+    .info {
+        white-space: wrap;
+    }
+
+    .map-info.left,
+    .map-info.absolute {
+        height: 303px;
+    }
 }

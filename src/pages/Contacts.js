@@ -26,7 +26,7 @@ export default function Contacts() {
                     }
                 ]}
                 imgLink="./images/form-left.png"
-                formPosition="left" />
+                formType="questions" />
         </div>
     )
 }

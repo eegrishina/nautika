@@ -64,7 +64,7 @@ export default function Home() {
                     }
                 ]}
                 imgLink="./images/form-right.png"
-                formPosition="right" />
+                formType="discount" />
             <Map />
         </div>
     )

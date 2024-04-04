@@ -196,7 +196,7 @@ export default function Rent() {
                     }
                 ]}
                 imgLink="./images/form-left.png"
-                formPosition="left" />
+                formType="questions" />
         </div>
     )
 }

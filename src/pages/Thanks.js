@@ -11,10 +11,12 @@ export default function Thanks() {
                 btns={[
                     {
                         text: "Вернуться на главную",
+                        link: "/",
                     },
                     {
                         text: "Перейти к услугам",
                         class: "white",
+                        link: '/services',
                     }
                 ]} />
         </div>

@@ -179,7 +179,7 @@ export default function Walks() {
                     }
                 ]}
                 imgLink="./images/form-left.png"
-                formPosition="left" />
+                formType="questions" />
         </div>
     )
 }

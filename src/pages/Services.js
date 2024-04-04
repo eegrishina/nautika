@@ -27,7 +27,7 @@ export default function Services() {
                     }
                 ]}
                 imgLink="./images/form-right.png"
-                formPosition="right" />
+                formType="discount" />
             <Map />
         </div>
     )

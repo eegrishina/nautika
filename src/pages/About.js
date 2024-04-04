@@ -8,11 +8,6 @@ export default function About() {
                 specialImgClass="img-about"
                 title="знакомство с наутикой"
                 small="Давайте узнаем друг друга немного ближе"
-                // btns={[
-                //     {
-                //         text: "Получить консультацию",
-                //     }
-                // ]}
                 btn="Получить консультацию" />
         </div>
     )

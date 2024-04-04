@@ -200,6 +200,12 @@ form input,
     }
 }
 
+@media (max-width: 1145px) {
+    h3 {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 960px) {
     h1 {
         font-size: 120px;
@@ -230,9 +236,9 @@ form input,
         font-size: 58px;
     }
 
-    h3 {
+    /* h3 {
         font-size: 20px;
-    }
+    } */
 
     h5 {
         font-size: 15px;
@@ -256,6 +262,10 @@ form input,
     h1 {
         font-size: 88px;
     }
+
+    h3 {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 646px) {
@@ -267,7 +277,6 @@ form input,
         font-size: 45px;
     }
 
-    h3,
     h6 {
         font-size: 15px;
     }

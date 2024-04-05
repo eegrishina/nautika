@@ -53,6 +53,10 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    line-height: 23.4px;
+}
+
 h1,
 h2,
 h4 {
@@ -183,14 +187,25 @@ form input,
 
 @media (max-width: 1145px) {
     h3 {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
+
+@media (max-width: 1080px) {
+    h2 {
+        font-size: 75px;
+    }
+}
+
 
 @media (max-width: 1024px) {
     body {
         max-width: 1024px;
         font-size: 16px;
+    }
+
+    p {
+        line-height: 20.8px;
     }
 
     .card {
@@ -202,7 +217,7 @@ form input,
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     h5 {
@@ -228,6 +243,10 @@ form input,
     h1 {
         font-size: 110px;
     }
+
+    h3 {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 820px) {
@@ -242,6 +261,10 @@ form input,
         font-size: 14px;
     }
 
+    p {
+        line-height: 18.2px;
+    }
+
     .card {
         font-size: 13px;
     }
@@ -253,10 +276,6 @@ form input,
     h2 {
         font-size: 58px;
     }
-
-    /* h3 {
-        font-size: 20px;
-    } */
 
     h5 {
         font-size: 15px;
@@ -283,11 +302,10 @@ form input,
 
     .first-screen.nocenter.thanks h1 {
         top: 15%;
-        /* font-size: 100px; */
     }
 
     h3 {
-        font-size: 15px;
+        font-size: 17px;
     }
 }
 
@@ -304,6 +322,7 @@ form input,
         font-size: 45px;
     }
 
+    h3,
     h6 {
         font-size: 15px;
     }
@@ -338,6 +357,10 @@ form input,
     .first-screen.nocenter.thanks h1 {
         top: 25%;
     }
+
+    h2 {
+        font-size: 29px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -349,10 +372,6 @@ form input,
 @media (max-width: 375px) {
     body {
         max-width: 375px;
-    }
-
-    h2 {
-        font-size: 29px;
     }
 
     .container,

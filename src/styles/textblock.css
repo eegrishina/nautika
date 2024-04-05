@@ -1,28 +1,71 @@
 .textblock-title h2:first-child {
     text-align: right;
+    margin-right: 30px;
 }
 
 .textblock-title h2:last-child {
     text-align: left;
-    margin-bottom: 80px;
+}
+
+.textblock-title {
+    margin-bottom: 70px;
 }
 
 .textblock-info,
 .textblock-text {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .textblock-info {
+    justify-content: space-between;
     align-items: flex-end;
 }
 
 .textblock-text {
-    font-size: 18px;
+    max-width: 870px;
     line-height: 23.4px;
 }
 
-.textblock-text p:last-child {
-    margin-left: 30px;
-    margin-right: 119px;
+@media (max-width: 1024px) {
+    .textblock-title {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .textblock-info {
+        gap: 0;
+    }
+
+    .textblock-title {
+        margin-bottom: 50px;
+    }
+
+    .textblock-title h2:first-child {
+        text-align: left;
+    }
+
+    .textblock-text {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 710px) {
+    .textblock-title {
+        margin-bottom: 30px;
+    }
+
+    .textblock-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 472px) {
+    .textblock-text {
+        flex-direction: column;
+        gap: 16px;
+    }
 }

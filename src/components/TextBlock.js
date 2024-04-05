@@ -8,11 +8,19 @@ export default function TextBlock({ titles, btn, link }) {
         )
     })
 
+    let arr = [];
     const textBlockP = titles.map(i => {
-        return (
-            <p key={i.id}>{i.p}</p>
+        arr.push(i.p.split("").length);
+        let diff = Math.floor(Math.max(arr[0], arr[1]) / Math.min(arr[0], arr[1]));
+        let result = 100 / (diff + 1) * diff * 1.3;
+        console.log(result);
+
+        return (Math.abs(arr[0] - arr[1]) > Math.min(arr[0], arr[1])) ? (
+            <p key={i.id} style={{ flexBasis: result + '%' }}>{i.p}</p>
+        ) : (
+            <p key={i.id} style={{ flexBasis: '45%' }}>{i.p}</p>
         )
-    })
+    });
 
     return (
         <div className='textblock'>

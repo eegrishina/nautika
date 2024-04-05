@@ -5,9 +5,9 @@ export default function Thanks() {
     return (
         <div className='container'>
             <FirstScreen imgPath='./images/main-ship-services.png'
-                title="благодарим вас за доверие"
+                title="благодарим вас за доверие"
                 small="Ваш запрос был успешно оформлен, проверьте свою электронную почту"
-                style={{ width: '500px' }}
+                thanksStyle="thanks"
                 btns={[
                     {
                         text: "Вернуться на главную",

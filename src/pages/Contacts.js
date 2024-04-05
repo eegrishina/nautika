@@ -9,7 +9,8 @@ export default function Contacts() {
         <div className='container'>
             <FirstScreen imgPath='./images/main-ship-contacts.png'
                 title="наши контакты и координаты"
-                small="Планируете посетить нас? Здесь вся информация о контактах и маршруте"
+                small={`Планируете посетить нас? \nЗдесь вся информация о контактах и маршруте`}
+                thanksStyle="thanks contacts"
                 btn="Заказать обратный звонок" />
             <HowToGo />
             <Map

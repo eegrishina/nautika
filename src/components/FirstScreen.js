@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
-export default function FirstScreen({ type, imgPath, specialImgClass, title, small, smallStyle, btn, btns, btnStyle }) {
+export default function FirstScreen({ type, imgPath, specialImgClass, title, small, thanksStyle, btn, btns, btnStyle }) {
 
     return (
-        <div className={type ? 'first-screen center' : 'first-screen nocenter'}>
+        <div className={type ? 'first-screen center' : 'first-screen nocenter ' + thanksStyle}>
             <h1>{title}</h1>
-            <p style={smallStyle}>{small}</p>
+            <p>{small}</p>
             <div className='first-img'>
                 <img className={specialImgClass} src={imgPath} alt=''></img>
             </div>

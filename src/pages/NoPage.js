@@ -5,7 +5,7 @@ export default function NoPage() {
     return (
         <div className='container'>
             <FirstScreen type="center"
-                imgPath='./images/nopage.png'
+                imgPath='./images/404upd.png'
                 small="Кажется, вы сбились с курса. Но не переживайте, мы готовы помочь вам!"
                 btn="Вернуться на главную"
                 btnStyle="btn-red-arrow" />

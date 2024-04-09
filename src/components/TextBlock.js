@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function TextBlock({ titles, btn, link }) {
     const textBlockH2 = titles.map(i => {
         return (
-            <h2 key={i.id} className={i.blue ? "blue" : "darkblue"}>{i.text}</h2>
+            <h2 key={i.id} className={i.blue ? "blue" : undefined}>{i.text}</h2>
         )
     })
 
@@ -13,7 +13,6 @@ export default function TextBlock({ titles, btn, link }) {
         arr.push(i.p.split("").length);
         let diff = Math.floor(Math.max(arr[0], arr[1]) / Math.min(arr[0], arr[1]));
         let result = 100 / (diff + 1) * diff * 1.3;
-        console.log(result);
 
         return (Math.abs(arr[0] - arr[1]) > Math.min(arr[0], arr[1])) ? (
             <p key={i.id} style={{ flexBasis: result + '%' }}>{i.p}</p>

@@ -1,47 +1,205 @@
-.journey,
-.journey-flexbox {
-    display: flex;
-    justify-content: space-between;
+.journey {
+    height: 572px;
 }
+
+.journey,
+.journey-flexbox,
+.journey-buttons {
+    display: flex;
+    gap: 30px;
+}
+
 
 .journey-flexbox {
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .side-img {
-    max-width: 570px;
-    max-height: 570px;
+    height: 100%;
+    min-width: 48%;
+}
+
+.side-img img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 
 .journey-buttons {
-    display: flex;
     flex-wrap: wrap;
 }
 
 .journey-container {
-    height: 158px;
-    width: 270px;
+    min-height: 158px;
+    max-width: 46%;
     background-color: var(--white-color);
-    margin: 30px 30px 0 0;
-    padding: 18px 14px;
+    padding: 16px;
 }
 
 .journey-container:hover,
-.journey-container:hover h4 {
+.journey-container:hover h6 {
     background-color: var(--blue-color);
     color: var(--white-color);
 }
 
-.journey-container p {
-    font-size: 16px;
+.journey-container h6 {
+    margin-bottom: 14px;
 }
 
-.journey-container small {
+.journey-container a {
     display: block;
     font-size: 14px;
-    line-height: 20px;
     font-weight: 500;
-    text-decoration: underline;
     text-align: right;
-    margin-top: 16px;
+    margin-top: 17px;
+}
+
+.journey-container.small-screen {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .journey {
+        height: 462px;
+    }
+
+    .journey-container {
+        min-height: 130px;
+        padding: 14px;
+    }
+
+    .journey-container h6 {
+        margin-bottom: 8px;
+    }
+
+    .journey-container p.card {
+        line-height: 120%;
+    }
+
+    .journey-container a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 850px) {
+    .journey {
+        height: 400px;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .journey-container,
+    .small-screen-info {
+        display: none;
+        min-width: 100%;
+        min-height: 48px;
+    }
+
+    .journey-container:hover,
+    .journey-container:hover h6 {
+        background-color: var(--white-color);
+        color: inherit;
+    }
+
+    .journey-container.small-screen {
+        display: block;
+        width: 100%;
+        padding: 14px;
+    }
+
+    .journey-container.small-screen.active .small-screen-info {
+        display: block;
+    }
+
+    .small-screen-title {
+        position: relative;
+    }
+
+    .small-screen-title h6 {
+        margin-bottom: 0;
+    }
+
+    .journey-container.small-screen.active,
+    .journey-container.small-screen.active h6 {
+        background-color: var(--blue-color);
+        color: var(--white-color);
+    }
+
+    .journey-container.small-screen.active h6 {
+        margin-bottom: 10px;
+    }
+
+    .small-screen-title span {
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .small-screen-title span::before,
+    .small-screen-title span::after {
+        content: '';
+        position: absolute;
+        background-color: var(--red-color);
+        width: 80%;
+        height: 2px;
+        right: 0;
+        border-radius: 2px;
+        transform: rotate(45deg);
+    }
+
+    .small-screen-title span::after {
+        right: -10px;
+        transform: rotate(-45deg);
+    }
+
+    .journey-container.small-screen.active .small-screen-title span::before {
+        transform: rotate(-45deg);
+        background-color: var(--white-color);
+    }
+
+    .journey-container.small-screen.active .small-screen-title span::after {
+        transform: rotate(45deg);
+        background-color: var(--white-color);
+    }
+
+    .journey-buttons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 12px;
+    }
+
+    .journey-flexbox {
+        min-width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .journey {
+        height: 360px;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 472px) {
+    .journey {
+        position: relative;
+        flex-direction: column-reverse;
+        height: 100%;
+        padding-top: 34px;
+    }
+
+    .journey h3 {
+        position: absolute;
+        top: 0;
+    }
+
+    .side-img {
+        height: 170px;
+    }
 }

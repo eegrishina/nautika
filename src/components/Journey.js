@@ -8,16 +8,16 @@ export default function Journey() {
             <div className='journey-flexbox'>
                 <h3><span className='blue'>Форматы</span> приключений</h3>
                 <div className='journey-buttons'>
-                    {api.map(item => {
-                        if (item.journey) {
-                            return (
-                                <JourneyBtn key={item.id} title={item.title} text={item.text} path={item.id} />
-                            )
-                        }
+                    {api.map(i => {
+                        return i.journey && (
+                            <JourneyBtn key={i.id} title={i.title} text={i.text} path={i.id} />
+                        )
                     })}
                 </div>
             </div>
-            <img className='side-img' src='./images/journey.png' alt=''></img>
+            <div className='side-img'>
+                <img src='./images/journey.png' alt=''></img>
+            </div>
         </div>
     )
 }

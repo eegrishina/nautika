@@ -5,14 +5,35 @@ import { Link } from "react-router-dom";
 export default function JourneyBtn({ title, text, path }) {
     const [hoverClass, setHoverClass] = useState(false);
 
+    function handleClick(e) {
+        document.querySelectorAll('.active').forEach(item => item.classList.remove('active'));
+        // e.target.closest('.journey-container.small-screen').classList.add('active');
+        setHoverClass(!hoverClass);
+    }
+
     return (
-        <div className='journey-container'
-            onMouseOver={() => setHoverClass(true)}
-            onMouseOut={() => setHoverClass(false)}
-        >
-            <h6>{title}</h6>
-            <p className='card'>{text}</p>
-            {hoverClass && <small><Link to={path}>Подробнее</Link></small>}
-        </div>
+        <>
+            <div className='journey-container'
+                onMouseOver={() => setHoverClass(true)}
+                onMouseOut={() => setHoverClass(false)}
+            >
+                <h6>{title}</h6>
+                <p className='card'>{text}</p>
+                {hoverClass && <Link to={path}>Подробнее  <i className="fas fa-arrow-right"></i></Link>}
+            </div>
+
+            <div className={hoverClass ? 'journey-container small-screen active' : 'journey-container small-screen'}
+                onClick={handleClick}
+            >
+                <div className='small-screen-title'>
+                    <h6>{title} </h6>
+                    <span className='journey-arrow'></span>
+                </div>
+                <div className='small-screen-info'>
+                    <p className='card'>{text}</p>
+                    <Link to={path}>Подробнее <i className="fas fa-arrow-right"></i></Link>
+                </div>
+            </div>
+        </>
     )
 }

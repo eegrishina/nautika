@@ -97,7 +97,7 @@ h2 {
 
 h3 {
     font-size: 28px;
-    line-height: 110%;
+    line-height: 120%;
 }
 
 h4 {
@@ -257,6 +257,10 @@ form input,
 @media (max-width: 820px) {
     .first-screen.nocenter.thanks h1 {
         top: 8%;
+    }
+
+    h3 {
+        font-size: 18px;
     }
 }
 

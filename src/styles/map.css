@@ -30,7 +30,7 @@
 .map-info small {
     font-size: 14px;
     font-weight: 500;
-    opacity: 60%;
+    opacity: 0.6;
 }
 
 .map-info p {

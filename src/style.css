@@ -137,6 +137,7 @@ li {
 
 p.card {
     font-size: 16px;
+    line-height: 128%;
 }
 
 img,
@@ -194,6 +195,14 @@ form input,
     h2 {
         font-size: 75px;
     }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    p.card {
+        font-size: 14px;
+    }
 }
 
 
@@ -221,10 +230,6 @@ form input,
 
     h5 {
         font-size: 18px;
-    }
-
-    h6 {
-        font-size: 20px;
     }
 
     .container {

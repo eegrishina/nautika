@@ -8,7 +8,7 @@ export default function ChooseOneYacht() {
     const [yachtBlock, setYachtBlock] = useState(
         <div className="top-text">
             <h6>Яхта <span className="blue">«Луч»</span></h6>
-            <p className='card'>«Луч» — олимпийский класс яхт, предназначенный для одного человека, который одновременно занимается и управлением яхтой, и настройкой паруса. Открытый кокпит и легкий вес делают его идеальным выбором для тренировок, где важны реакция, баланс и взаимодействие с ветром и волнами.</p>
+            <p className='card'>«Луч» — олимпийский класс яхт, предназначенный для одного человека, который одновременно занимается и управлением яхтой, и настройкой паруса. Эта легкая и динамичная яхта отлично подходит для тренировки реакции и баланса.</p>
         </div>
     );
 
@@ -18,7 +18,6 @@ export default function ChooseOneYacht() {
                 onClick={() => handleClick(y.id)}>{y.name}</button>
         )
     })
-
 
     function handleClick(btnId) {
         apiYacht
@@ -33,7 +32,7 @@ export default function ChooseOneYacht() {
                 return (
                     <div key={y.id} className="top-text">
                         <h6>Яхта <span className="blue">«{y.name}»</span></h6>
-                        <p>{y.description}</p>
+                        <p className='card'>{y.description}</p>
                     </div>
                 )
             })[0])
@@ -41,23 +40,23 @@ export default function ChooseOneYacht() {
 
     return (
         <div className="choose-yacht">
-            <img className="side-img" src="./images/choose-yacht.png" alt=""></img>
-            <div className="choose-boxes">
-                <div className="choose-top">
-                    <div className="top-btn">
-                        {buttons}
-                    </div>
-                    {yachtBlock}
+            <div className="side-img">
+                <img src="./images/choose-yacht.png" alt=""></img>
+            </div>
+            <div className="choose-top">
+                <div className="top-btn">
+                    {buttons}
                 </div>
-                <div className="choose-bottom">
-                    <div className="bottom-text">
-                        <h6>Идеальная погода для яхты <span className='blue'>«{yachtName}»</span></h6>
-                        <p className='card'>Сегодня отличная возможность потренироваться на швертботе «{yachtName}». Не забудьте прихватить с собой крем SPF, чтобы ваше плавание было приятным и безопасным, а остальное — за нами!</p>
-                    </div>
-                    <div className="bottom-btn">
-                        <p><Link to='/weather'>Смотреть подробный прогноз</Link></p>
-                        <button className="btn-red-arrow"><Link to='/training'>Записаться на тренировку <i className="fas fa-arrow-right"></i></Link></button>
-                    </div>
+                {yachtBlock}
+            </div>
+            <div className="choose-bottom">
+                <div className="bottom-text">
+                    <h6>Идеальная погода для яхты <span className='blue'>«{yachtName}»</span></h6>
+                    <p className='card'>Сегодня отличная возможность потренироваться на швертботе «{yachtName}». Не забудьте прихватить с собой крем SPF, чтобы ваше плавание было приятным и безопасным, а остальное — за нами!</p>
+                </div>
+                <div className="bottom-btn">
+                    <Link to='/weather' className="btn-blue">Смотреть подробный прогноз</Link>
+                    <button className="btn-red-arrow"><Link to='/training'>Записаться на тренировку <i className="fas fa-arrow-right"></i></Link></button>
                 </div>
             </div>
         </div>

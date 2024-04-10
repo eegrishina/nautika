@@ -1,27 +1,141 @@
 .choose-yacht {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    height: 572px;
+    position: relative;
 }
 
-.choose-yacht img {
-    margin-right: 30px;
+.choose-yacht h6 {
+    margin-bottom: 10px;
+}
+
+.choose-yacht .side-img {
+    max-width: 48%;
 }
 
 .choose-top,
-.choose-bottom,
-.choose-boxes {
+.choose-bottom {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.choose-top {
+    gap: 20px;
+    width: 49%;
+    max-height: 279px;
+}
+
+.choose-bottom {
+    width: 49%;
+    max-height: 261px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .choose-top,
 .choose-bottom {
     background-color: var(--white-color);
     padding: 30px;
-    font-size: 16px;
     height: 100%;
 }
 
-.choose-top {
-    margin-bottom: 30px;
+@media (max-width: 1080px) {
+    .choose-yacht {
+        height: 462px;
+    }
+
+    .choose-yacht h6 {
+        margin-bottom: 8px;
+    }
+
+    .choose-top {
+        max-height: 247px;
+        gap: 18px;
+        width: 48%;
+    }
+
+    .choose-bottom {
+        max-height: 185px;
+        width: 48%;
+    }
+
+    .choose-top,
+    .choose-bottom {
+        padding: 26px;
+    }
+}
+
+@media (max-width: 960px) {
+    .choose-yacht {
+        height: 399px;
+        gap: 24px;
+    }
+
+    .choose-yacht .side-img {
+        height: 62%;
+    }
+
+    .choose-top {
+        height: 63%;
+        width: 48%;
+        gap: 14px;
+    }
+
+    .choose-bottom {
+        position: relative;
+        width: 100%;
+        max-height: 38%;
+    }
+
+    .choose-top,
+    .choose-bottom {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 692px) {
+    .choose-yacht {
+        height: 423px;
+        gap: 16px;
+    }
+
+    .choose-top {
+        min-height: 62%;
+    }
+
+    .choose-bottom {
+        max-height: 34%;
+    }
+
+    .choose-top,
+    .choose-bottom {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 555px) {
+    .choose-yacht {
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .choose-yacht .side-img {
+        max-width: 100%;
+        height: 170px;
+    }
+
+    .choose-top {
+        width: 100%;
+    }
+}
+
+@media (max-width: 315px) {
+    .choose-top {
+        min-height: 280px;
+    }
 }

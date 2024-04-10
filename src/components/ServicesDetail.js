@@ -15,12 +15,12 @@ export default function ServicesDetail() {
                 },
                 {
                     title: "Почасовое обучение",
-                    text: "Занимайтесь с инструктором сколько хотите",
+                    text: "Занимайтесь с инструктором сколько хотите",
                     price: "3 000 ₽ / час",
                 },
                 {
                     title: "Базовый курс",
-                    text: "Получите основные навыки управления и навигации",
+                    text: "Получите основные навыки управления и навигации",
                     price: "19 000 ₽",
                 }
             ]
@@ -32,7 +32,7 @@ export default function ServicesDetail() {
             data: [
                 {
                     title: "Почасовая прогулка",
-                    text: "С понедельника по четверг третий час в подарок",
+                    text: "С понедельника по четверг третий час в подарок",
                     price: "3 000 ₽ / час",
                 },
                 {
@@ -50,6 +50,11 @@ export default function ServicesDetail() {
                 {
                     title: "Яхта «Луч»",
                     text: "Яхта рассчитана только на одного человека",
+                    price: "2 000 ₽ / час",
+                },
+                {
+                    title: "Яхта «Солинг»",
+                    text: "Яхта рассчитана максимум на шестерых человек",
                     price: "2 000 ₽ / час",
                 },
                 {
@@ -72,7 +77,7 @@ export default function ServicesDetail() {
                 },
                 {
                     title: "«Мое морское путешествие»",
-                    text: "Оплачивается отдельно от прогулки и включает 30–50 обработанных фото",
+                    text: "Оплачивается отдельно от прогулки и включает 30–50 обработанных фото",
                     price: "2 000 ₽",
                 }
             ]
@@ -86,7 +91,7 @@ export default function ServicesDetail() {
     })
 
     return (
-        <div className="services-flexbox">
+        <div className="services-detail">
             {listInfoPrice}
         </div>
     )

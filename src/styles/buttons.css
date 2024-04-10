@@ -47,17 +47,6 @@
     cursor: pointer;
 }
 
-.circle-btn.btn-link {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    opacity: 30%;
-}
-
-.circle-btn.btn-link:hover {
-    opacity: 1;
-}
-
 .circle-btn i {
     font-size: 26px;
     color: var(--red-color);
@@ -76,7 +65,7 @@
 }
 
 .circle-btn:disabled {
-    opacity: 30%;
+    opacity: 0.3;
     cursor: auto;
 }
 
@@ -120,7 +109,7 @@
     padding: 8px 20px;
     background-color: inherit;
     color: var(--blue-color);
-    margin: 8px 10px 0 0;
+    margin-top: 10px;
     font-family: inherit;
     font-size: 16px;
 }
@@ -204,6 +193,20 @@
 
     .btn-blue {
         margin-bottom: 24px;
+    }
+
+    .pill {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+
+    .circle-btn {
+        height: 40px;
+        width: 40px;
+    }
+
+    .circle-btn i {
+        font-size: 20px;
     }
 }
 

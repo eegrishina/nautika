@@ -147,7 +147,7 @@ img,
 .map-info,
 .map-container iframe,
 .how-block,
-.price-flexbox,
+.services-price,
 .card-container,
 form input,
 .gallery-photo-textblock,
@@ -216,10 +216,6 @@ form input,
         line-height: 20.8px;
     }
 
-    p.card {
-        font-size: 14px;
-    }
-
     h2 {
         font-size: 75px;
     }
@@ -254,6 +250,10 @@ form input,
 }
 
 @media (max-width: 850px) {
+    h4 {
+        font-size: 30px;
+    }
+
     h6 {
         font-size: 16px;
     }
@@ -320,6 +320,10 @@ form input,
 
     h3 {
         font-size: 17px;
+    }
+
+    h4 {
+        font-size: 24px;
     }
 }
 

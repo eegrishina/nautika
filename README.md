@@ -1,5 +1,7 @@
 # Яхт-школа "Наутика"
 
+<img src="mainPageNautika.gif" alt="Main page GIF" width="50%" height="50%">
+
 ## Описание
 
 Многостраничный сайт для новосибирской яхт-школы “Наутика”.\
@@ -18,6 +20,8 @@
 - adaptive design.
 
 Макет доступен для просмотра по ссылке: [https://www.figma.com/file/Nautical-school](https://www.figma.com/file/ETv7yoOmbygH92Oa0gUF2m/Nautical-school?type=design&node-id=0-1&mode=design&t=OubahxU60CIVdtpY-0).
+
+<img src="designLayout.png" alt="Design layout">
 
 ## Обратная связь
 

@@ -12,7 +12,6 @@
 .faq-container ul li {
     list-style-type: circle;
     list-style-position: inside;
-    font-size: 18px;
     font-weight: 700;
     cursor: pointer;
 }
@@ -30,7 +29,7 @@
 .faq-container ul p {
     font-size: 16px;
     font-weight: 400;
-    opacity: 60%;
+    opacity: 0.6;
 }
 
 .faq-container ul span {

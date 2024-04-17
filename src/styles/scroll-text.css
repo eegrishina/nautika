@@ -35,6 +35,5 @@
 }
 
 .one-text-container p {
-    opacity: 60%;
-    font-size: 18px;
+    opacity: 0.6;
 }

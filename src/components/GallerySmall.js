@@ -1,5 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
+import { React, useState } from 'react';
+import ScrollBtn from './ScrollBtn';
 
 export default function GallerrySmall({ title, text, images }) {
     const [count, setCount] = useState(0);
@@ -33,18 +33,10 @@ export default function GallerrySmall({ title, text, images }) {
             <div className='gallery-photo-textblock'>
                 <h6>{title}</h6>
                 <p className='card'>{text}</p>
-                <div className='scroll-btn'>
-                    <button className='circle-btn' id='left'
-                        disabled={count < 1}
-                        onClick={() => handleClickRight()}>
-                        <i className='fas fa-arrow-right'></i>
-                    </button>
-                    <button className='circle-btn' id='right'
-                        disabled={count > photos.length - 2}
-                        onClick={() => handleClickLeft()}>
-                        <i className='fas fa-arrow-right'></i>
-                    </button>
-                </div>
+                <ScrollBtn disabledLeft={count < 1}
+                    disabledRight={count > photos.length - 2}
+                    handleClickLeft={handleClickLeft}
+                    handleClickRight={handleClickRight} />
             </div>
         </div>
     )

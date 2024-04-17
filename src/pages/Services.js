@@ -14,7 +14,51 @@ export default function Services() {
                 small="С нами каждая морская мечта становится реальностью"
                 btn="Получить консультацию" />
             <ServicesDetail />
-            <GallerryBig />
+            <GallerryBig
+                images={[
+                    {
+                        src: './images/gallery-big1.png',
+                    },
+                    {
+                        src: './images/gallery-big2.png',
+                    },
+                    {
+                        src: './images/gallery-big3.png',
+                        gridSize: 'h-2',
+                    },
+                    {
+                        src: './images/gallery-big4.png',
+                    },
+                    {
+                        src: './images/gallery-big5.png',
+                    },
+                    {
+                        src: './images/gallery-big6.png',
+                        gridSize: 'h-2',
+                    },
+                    {
+                        src: './images/journey.png',
+                    },
+                    {
+                        src: './images/gallery-small11.jpeg',
+                    },
+                    {
+                        src: '',
+                        gridSize: 'w-2',
+                    },
+                    {
+                        src: './images/journey.png',
+                    },
+                    {
+                        src: './images/gallery-small11.jpeg',
+                    },
+                    {
+                        src: './images/gallery-big5.png',
+                    },
+                    {
+                        src: './images/gallery-big4.png',
+                    },
+                ]} />
             <FormBlock
                 titles={[
                     {

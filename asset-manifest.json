@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nautika/static/css/main.ffc6adc6.css",
+    "main.js": "/nautika/static/js/main.f0510a72.js",
+    "index.html": "/nautika/index.html",
+    "main.ffc6adc6.css.map": "/nautika/static/css/main.ffc6adc6.css.map",
+    "main.f0510a72.js.map": "/nautika/static/js/main.f0510a72.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffc6adc6.css",
+    "static/js/main.f0510a72.js"
+  ]
+}

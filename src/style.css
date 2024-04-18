@@ -15,6 +15,12 @@
 @import url(/src/styles/textblock.css);
 @import url(/src/styles/yacht-detail.css);
 
+@font-face {
+    font-family: "Bebas Neue Cyrillic";
+    src: local("Bebas Neue Cyrillic"),
+        url("./fonts/bebasneuecyrillic.ttf") format("truetype");
+}
+
 :root {
     --blue-color: #2891D7;
     --blue-color-hover: #3BA9F2;

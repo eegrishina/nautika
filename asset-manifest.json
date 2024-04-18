@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/nautika/static/css/main.ffc6adc6.css",
-    "main.js": "/nautika/static/js/main.f0510a72.js",
-    "index.html": "/nautika/index.html",
-    "main.ffc6adc6.css.map": "/nautika/static/css/main.ffc6adc6.css.map",
-    "main.f0510a72.js.map": "/nautika/static/js/main.f0510a72.js.map"
+    "main.css": "https://kaktusgr.github.io/nautika/static/css/main.c27c7667.css",
+    "main.js": "https://kaktusgr.github.io/nautika/static/js/main.f0510a72.js",
+    "index.html": "https://kaktusgr.github.io/nautika/index.html",
+    "main.c27c7667.css.map": "https://kaktusgr.github.io/nautika/static/css/main.c27c7667.css.map",
+    "main.f0510a72.js.map": "https://kaktusgr.github.io/nautika/static/js/main.f0510a72.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffc6adc6.css",
+    "static/css/main.c27c7667.css",
     "static/js/main.f0510a72.js"
   ]
 }

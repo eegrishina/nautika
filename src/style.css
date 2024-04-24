@@ -16,9 +16,10 @@
 @import url(/src/styles/yacht-detail.css);
 
 @font-face {
-    font-family: "Bebas Neue Cyrillic";
-    src: local("Bebas Neue Cyrillic"),
-        url("./fonts/bebasneuecyrillic.ttf") format("truetype");
+    font-family: "Bebas Neue";
+    src: local("Bebas Neue"),
+        url("./fonts/BebasNeue-Bold.ttf") format("truetype");
+    font-weight: 700;
 }
 
 :root {
@@ -66,7 +67,8 @@ p {
 h1,
 h2,
 h4 {
-    font-family: "Bebas Neue Cyrillic", sans-serif;
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    font-weight: 700;
 }
 
 h1,

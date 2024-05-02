@@ -14,7 +14,17 @@ export default function Navbar() {
                 <div className="burger-menu" onClick={() => setBurgerStyle(!burgerStyle)}><span></span></div>
                 <nav className='header-menu'>
                     <ul>
-                        <li><Link to='/services'>Услуги</Link></li>
+                        <li>
+                            <details>
+                                <summary><Link to='/services'>Услуги</Link></summary>
+                                <ul>
+                                    <li><Link to='/education'>Обучение</Link></li>
+                                    <li><Link to='/walks'>Прогулки</Link></li>
+                                    <li><Link to='/rent'>Аренда</Link></li>
+                                    <li><Link to='/certificates'>Фотосессии</Link></li>
+                                </ul>
+                            </details>
+                        </li>
                         <li><Link to='/certificates'>Сертификаты</Link></li>
                         <li><Link to='/about'>О нас</Link></li>
                         <li><Link to='/weather'>Погода</Link></li>

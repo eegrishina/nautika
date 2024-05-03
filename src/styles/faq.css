@@ -6,14 +6,23 @@
 .faq-container ul {
     display: flex;
     flex-direction: column;
-    gap: 16px;
 }
 
 .faq-container ul li {
     list-style-type: circle;
-    list-style-position: inside;
-    font-weight: 700;
+    list-style-position: outside;
     cursor: pointer;
+    position: relative;
+    margin-left: 30px;
+    padding-left: 90px;
+}
+
+.faq-container ul li p.question {
+    vertical-align: top;
+    display: inline;
+    font-weight: 700;
+    line-height: 130%;
+    opacity: 1;
 }
 
 ::marker {
@@ -26,20 +35,58 @@
 }
 
 .faq-container ul span,
-.faq-container ul p {
+.faq-container ul p.card {
     font-size: 16px;
     font-weight: 400;
     opacity: 0.6;
 }
 
 .faq-container ul span {
-    margin: 0 84px 0 59px;
+    position: absolute;
+    left: 2.5%;
+    top: 13px;
 }
 
-.faq-container ul p {
-    margin: 10px 216px 16px 234px;
+.faq-container ul p.card {
+    margin: 10px 200px 0 30px;
 }
 
 .faq-container ul hr {
-    margin-top: 16px;
+    margin-top: 18px;
+}
+
+@media (max-width: 1024px) {
+    .faq-container ul p.card {
+        margin-right: 164px;
+    }
+}
+
+@media (max-width: 900px) {
+    .faq-container ul li {
+        padding-left: 70px;
+    }
+
+    .faq-container ul p.card {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-container h3 {
+        margin-bottom: 20px;
+    }
+
+    .faq-container ul p.card {
+        margin: 10px 14px 0 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .faq-container ul li {
+        padding-left: 55px;
+    }
+
+    .faq-container ul p.card {
+        margin-left: 0;
+    }
 }

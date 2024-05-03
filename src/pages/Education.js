@@ -2,7 +2,7 @@ import React from 'react';
 import FirstScreen from '../components/FirstScreen';
 import PriceCards from '../components/PriceCards';
 import ScrollTexts from '../components/ScrollTexts';
-import GallerrySmall from '../components/GallerySmall';
+import GallerrySimple from '../components/GallerySimple';
 import TextBlock from '../components/TextBlock';
 import FAQs from '../components/FAQs';
 import FormBlock from '../components/FormBlock';
@@ -83,7 +83,7 @@ export default function Education() {
                         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius distinctio nobis sapiente, error ratione, vitae ipsam accusantium, nulla saepe autem numquam odio! Reprehenderit nisi, doloribus commodi veniam similique modi dignissimos."
                     },
                 ]} />
-            <GallerrySmall
+            <GallerrySimple
                 title="Как проходят тренировки"
                 text="Наши уроки на яхте класса «Луч» ориентированы в первую очередь на практическое обучение. Теоретический материал интегрируется непосредственно в упражнения, обеспечивая применение знаний на практике."
                 images={[

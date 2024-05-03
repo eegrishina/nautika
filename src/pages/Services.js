@@ -1,7 +1,7 @@
 import React from 'react';
 import FirstScreen from '../components/FirstScreen';
 import ServicesDetail from '../components/ServicesDetail';
-import GallerryBig from '../components/GalleryBig';
+import GallerryGrid from '../components/GalleryGrid';
 import FormBlock from '../components/FormBlock';
 import Map from '../components/Map';
 
@@ -14,7 +14,11 @@ export default function Services() {
                 small="С нами каждая морская мечта становится реальностью"
                 btn="Получить консультацию" />
             <ServicesDetail />
-            <GallerryBig
+            <GallerryGrid
+                title="Внесите краски в свою жизнь и в жизнь своих близких"
+                text="У нас вы можете преобрести подарочные сертификаты на любую из предоставляемых услуг. Подарите своим близким незабываемые морские впечатления!"
+                link="/certificates"
+                textBtn="Оформить сертификат"
                 images={[
                     {
                         src: './images/gallery-big1.png',

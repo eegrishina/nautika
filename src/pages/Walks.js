@@ -133,22 +133,22 @@ export default function Walks() {
                 props={[
                     {
                         id: 1,
-                        question: "Какие меры безопасности принимаются во время прогулок?",
+                        question: "Какие меры безопасности принимаются во время прогулок?",
                         answer: "Прогулки проводятся под контролем опытных инструкторов, обладающих всеми необходимыми компетенциями, в том числе навыками оказания первой помощи. Вы в обязательном порядке получаете спасательный жилет и проходите краткий инструктаж перед началом прогулки. Также, находясь на воде, мы всегда имеем возможность связаться со спасателями.",
                     },
                     {
                         id: 2,
-                        question: "Можно ли на яхту с животными?",
+                        question: "Можно ли на яхту с животными?",
                         answer: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ipsa optio, dignissimos tempora distinctio obcaecati doloremque, alias laborum dolorem voluptas ab adipisci molestias, provident iure est sed quidem architecto deserunt autem. Dolor quibusdam consequatur explicabo laborum. Beatae hic veritatis quam!",
                     },
                     {
                         id: 3,
-                        question: "Можно ли на яхту с детьми?",
+                        question: "Можно ли на яхту с детьми?",
                         answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officia cum molestiae magni repellat error debitis perspiciatis suscipit. Veniam, nam.",
                     },
                     {
                         id: 4,
-                        question: "Что нужно взять с собой на прогулку?",
+                        question: "Что нужно взять с собой на прогулку?",
                         answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi dicta distinctio consectetur dignissimos quas consequuntur, illum placeat eius vitae voluptates voluptatem aliquam non aspernatur itaque ipsam. Quod ea ab corporis praesentium quam consectetur.",
                     },
                     {
@@ -158,7 +158,7 @@ export default function Walks() {
                     },
                     {
                         id: 6,
-                        question: "На яхте укачивает?",
+                        question: "На яхте укачивает?",
                         answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium facere sit delectus iusto soluta, illum dignissimos enim consequatur doloribus!",
                     },
                     {

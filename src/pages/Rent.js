@@ -150,27 +150,27 @@ export default function Rent() {
                 props={[
                     {
                         id: 1,
-                        question: "Есть ли возможность взять снаряжение в аренду?",
+                        question: "Есть ли возможность взять снаряжение в аренду?",
                         answer: "Culpa ipsa optio, dignissimos tempora distinctio obcaecati doloremque, alias laborum dolorem voluptas ab adipisci molestias, provident iure est sed quidem architecto deserunt autem.",
                     },
                     {
                         id: 2,
-                        question: "Как происходит процесс получения и возврата арендованных яхт?",
+                        question: "Как происходит процесс получения и возврата арендованных яхт?",
                         answer: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ipsa optio, dignissimos tempora distinctio obcaecati doloremque, alias laborum dolorem voluptas ab adipisci molestias, provident iure est sed quidem architecto deserunt autem. Dolor quibusdam consequatur explicabo laborum. Beatae hic veritatis quam!",
                     },
                     {
                         id: 3,
-                        question: "Есть ли особые требования к чистоте и уборке перед возвратом арендованных яхт?",
+                        question: "Есть ли особые требования к чистоте и уборке перед возвратом арендованных яхт?",
                         answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officia cum molestiae magni repellat error debitis perspiciatis suscipit. Veniam, nam.",
                     },
                     {
                         id: 4,
-                        question: "Как получить помощь в случае неотложных ситуаций?",
+                        question: "Как получить помощь в случае неотложных ситуаций?",
                         answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi dicta distinctio consectetur dignissimos quas consequuntur, illum placeat eius vitae voluptates voluptatem aliquam non aspernatur itaque ipsam. Quod ea ab corporis praesentium quam consectetur.",
                     },
                     {
                         id: 5,
-                        question: "Есть ли ограничения по возрасту?",
+                        question: "Есть ли ограничения по возрасту?",
                         answer: "Odit officia cum molestiae magni repellat error debitis perspiciatis suscipit. Aut sint blanditiis enim voluptatibus facilis aspernatur! Veniam, nam.",
                     },
                     {
@@ -180,7 +180,7 @@ export default function Rent() {
                     },
                     {
                         id: 7,
-                        question: "Какова политика возврата средств в случае неблагоприятных условий или изменения планов?",
+                        question: "Какова политика возврата средств в случае неблагоприятных условий или изменения планов?",
                         answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi dicta distinctio consectetur dignissimos quas consequuntur, illum placeat eius vitae voluptates voluptatem aliquam non aspernatur itaque ipsam. Quod ea ab corporis praesentium quam consectetur.",
                     },
                 ]} />

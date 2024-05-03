@@ -137,12 +137,12 @@ export default function Education() {
                 props={[
                     {
                         id: 1,
-                        question: "Какие меры безопасности принимаются во время занятий?",
+                        question: "Какие меры безопасности принимаются во время занятий?",
                         answer: "Занятия проводятся под контролем опытных инструкторов, обладающих всеми необходимыми компетенциями, в том числе навыками оказания первой помощи. Вы в обязательном порядке получаете спасательный жилет и проходите краткий инструктаж перед началом занятий. Также, находясь на воде, мы всегда имеем возможность связаться со спасателями.",
                     },
                     {
                         id: 2,
-                        question: "Какие требования к возрасту для участия в обучении?",
+                        question: "Какие требования к возрасту для участия в обучении?",
                         answer: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ipsa optio, dignissimos tempora distinctio obcaecati doloremque, alias laborum dolorem voluptas ab adipisci molestias, provident iure est sed quidem architecto deserunt autem. Dolor quibusdam consequatur explicabo laborum. Beatae hic veritatis quam!",
                     },
                     {
@@ -152,17 +152,17 @@ export default function Education() {
                     },
                     {
                         id: 4,
-                        question: "Какие дополнительные материалы или снаряжение нужно приносить на уроки?",
+                        question: "Какие дополнительные материалы или снаряжение нужно приносить на уроки?",
                         answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi dicta distinctio consectetur dignissimos quas consequuntur, illum placeat eius vitae voluptates voluptatem aliquam non aspernatur itaque ipsam. Quod ea ab corporis praesentium quam consectetur.",
                     },
                     {
                         id: 5,
-                        question: "Есть ли у вас сертификаты или аккредитации для ваших инструкторов?",
+                        question: "Есть ли у вас сертификаты или аккредитации для ваших инструкторов?",
                         answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officia cum molestiae magni repellat error debitis perspiciatis suscipit. Aut sint blanditiis enim voluptatibus facilis aspernatur! Veniam, nam.",
                     },
                     {
                         id: 6,
-                        question: "Как долго длится базовый курс обучения на яхте?",
+                        question: "Как долго длится базовый курс обучения на яхте?",
                         answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium facere sit delectus iusto soluta, illum dignissimos enim consequatur doloribus!",
                     },
                     {

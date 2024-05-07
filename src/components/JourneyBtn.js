@@ -6,9 +6,10 @@ export default function JourneyBtn({ title, text, path }) {
     const [hoverClass, setHoverClass] = useState(false);
 
     function handleClick(e) {
-        document.querySelectorAll('.active').forEach(item => item.classList.remove('active'));
-        // e.target.closest('.journey-container.small-screen').classList.add('active');
-        setHoverClass(!hoverClass);
+        if (!e.target.closest('.journey-container.small-screen.active')) {
+            document.querySelectorAll('.active').forEach(item => item.classList.remove('active'));
+        }
+        e.target.closest('.journey-container.small-screen').classList.toggle('active');
     }
 
     return (
@@ -22,7 +23,7 @@ export default function JourneyBtn({ title, text, path }) {
                 {hoverClass && <Link to={path}>Подробнее  <i className="fas fa-arrow-right"></i></Link>}
             </div>
 
-            <div className={hoverClass ? 'journey-container small-screen active' : 'journey-container small-screen'}
+            <div className='journey-container small-screen'
                 onClick={handleClick}
             >
                 <div className='small-screen-title'>

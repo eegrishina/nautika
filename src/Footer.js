@@ -35,10 +35,18 @@ export default function Footer() {
                         <li><a href="mailto:nautica@mail.ru">nautica@mail.ru</a></li>
                     </ul>
                     <div className="footer-icons">
-                        <img src="./images/icons/tg-icon.png" alt="tg"></img>
-                        <img src="./images/icons/wa-icon.png" alt="wa"></img>
-                        <img src="./images/icons/vk-icon.png" alt="vk"></img>
-                        <img src="./images/icons/inst-icon.png" alt="inst"></img>
+                        <a>
+                            <img src="./images/icons/tg-icon.png" alt="tg"></img>
+                        </a>
+                        <a>
+                            <img src="./images/icons/wa-icon.png" alt="wa"></img>
+                        </a>
+                        <a href="https://vk.com/nautical_school_nsk">
+                            <img src="./images/icons/vk-icon.png" alt="vk"></img>
+                        </a>
+                        <a>
+                            <img src="./images/icons/inst-icon.png" alt="inst"></img>
+                        </a>
                     </div>
                 </div>
             </div>

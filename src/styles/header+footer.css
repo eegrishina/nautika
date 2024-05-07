@@ -30,6 +30,7 @@ footer p {
 .header-menu>ul {
     display: flex;
     gap: 24px;
+    user-select: none;
 }
 
 .header-menu li a:hover,
@@ -44,49 +45,6 @@ footer p {
 
 .header-phone {
     font-weight: 700;
-}
-
-summary {
-    display: block;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
-summary::before {
-    content: "\25B6";
-    padding-right: 10px;
-    color: var(--blue-color);
-    cursor: pointer;
-}
-
-details[open]>summary::before {
-    content: "\25BC";
-}
-
-summary:hover::before {
-    color: var(--blue-color-hover);
-}
-
-summary:active::before {
-    color: var(--blue-color-active);
-}
-
-details {
-    position: relative;
-}
-
-details ul {
-    position: absolute;
-    background-color: var(--bg-color);
-    padding: 0 10px 10px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-}
-
-details ul li {
-    margin-top: 12px;
 }
 
 .burger-menu {
@@ -108,20 +66,24 @@ footer hr {
 
 footer h6 {
     font-size: 13px;
+    margin-bottom: 12px;
 }
 
 footer p {
     text-align: center;
-    text-decoration: underline;
     margin-top: 63px;
     color: rgba(43, 43, 43, 0.6);
 }
 
-footer p:hover {
+footer p a {
+    text-decoration: underline;
+}
+
+footer p a:hover {
     color: var(--blue-color-hover);
 }
 
-footer p:active {
+footer p a:active {
     color: var(--blue-color-active);
 }
 
@@ -129,19 +91,28 @@ footer p:active {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 16px;
     font-size: 18px;
-    line-height: 1.7rem;
+    line-height: 1.8rem;
+}
+
+footer a,
+.header-menu li a {
+    cursor: pointer;
 }
 
 .footer-icons {
-    margin-top: 28px;
+    margin-top: 10px;
 }
 
 .footer-icons img {
     height: 26px;
     width: 26px;
-    margin-right: 12px;
+    margin-right: 9px;
+}
+
+.footer-icons img:hover {
+    outline: 4px solid #C2DEF0;
+    border-radius: 50%;
 }
 
 @media (max-width: 1024px) {
@@ -299,10 +270,6 @@ footer p:active {
 }
 
 @media (max-width: 540px) {
-    h1 {
-        font-size: 60px;
-    }
-
     .footer-column {
         flex-direction: column;
         gap: 24px;

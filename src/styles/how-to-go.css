@@ -2,6 +2,10 @@
     margin-bottom: 50px;
 }
 
+.how-to-go h6 {
+    margin-bottom: 14px;
+}
+
 .how-flex {
     display: flex;
     gap: 30px;
@@ -30,6 +34,10 @@
 }
 
 @media (max-width: 1024px) {
+    .how-to-go h6 {
+        margin-bottom: 12px;
+    }
+
     .how-block {
         padding: 26px;
     }
@@ -40,6 +48,10 @@
 }
 
 @media (max-width: 768px) {
+    .how-to-go h6 {
+        margin-bottom: 10px;
+    }
+
     .how-flex {
         gap: 24px;
     }

@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from 'react';
-import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 export default function PriceOneCard({ cardTitle, cardText, cardPrice, cardTime, cardBtn, imgVisible, imgLink, idForm }) {

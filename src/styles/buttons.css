@@ -90,7 +90,7 @@
     cursor: pointer;
 }
 
-.top-btn button:hover {
+.top-btn button:not(.active):hover {
     background-color: #EBF0FA;
 }
 

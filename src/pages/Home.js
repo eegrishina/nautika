@@ -34,7 +34,7 @@ export default function Home() {
                     }
                 ]}
                 btn="Узнать подробнее"
-                link="about" />
+                link="/about" />
             <Journey />
             <Statistics />
             <ChooseOneYacht />
@@ -54,7 +54,7 @@ export default function Home() {
                     }
                 ]}
                 btn="Оформить сертификат"
-                link="certificates" />
+                link="/certificates" />
             <FormBlock
                 idForm={location}
                 titles={[
@@ -69,7 +69,8 @@ export default function Home() {
                 ]}
                 imgLink="./images/form-right.png"
                 formType="discount" />
-            <Map />
+            <Map
+                idForm={location} />
         </div>
     )
 }

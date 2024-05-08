@@ -30,7 +30,7 @@ export default function About() {
                     }
                 ]}
                 btn="Оформить сертификат"
-                link="certificates" />
+                link="/certificates" />
             <FormBlock
                 idForm={location}
                 titles={[

@@ -17,6 +17,7 @@ export default function Contacts() {
                 idForm={location} />
             <HowToGo />
             <Map
+                idForm={location}
                 classInfo="absolute" />
             <FormBlock
                 idForm={location}

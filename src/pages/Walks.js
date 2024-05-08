@@ -131,7 +131,7 @@ export default function Walks() {
                     }
                 ]}
                 btn="Оформить сертификат"
-                link="certificates" />
+                link="/certificates" />
             <FAQs
                 props={[
                     {

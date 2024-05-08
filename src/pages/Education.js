@@ -135,7 +135,7 @@ export default function Education() {
                     }
                 ]}
                 btn="Оформить сертификат"
-                link="certificates" />
+                link="/certificates" />
             <FAQs
                 props={[
                     {

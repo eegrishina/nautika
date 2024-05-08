@@ -20,7 +20,7 @@ export default function JourneyBtn({ title, text, path }) {
             >
                 <h6>{title}</h6>
                 <p className='card'>{text}</p>
-                {hoverClass && <Link to={path}>Подробнее  <i className="fas fa-arrow-right"></i></Link>}
+                {hoverClass && <Link to={`/${path}`}>Подробнее  <i className="fas fa-arrow-right"></i></Link>}
             </div>
 
             <div className='journey-container small-screen'

@@ -80,7 +80,8 @@ export default function Services() {
                 ]}
                 imgLink="./images/form-right.png"
                 formType="discount" />
-            <Map />
+            <Map
+                idForm={location} />
         </div>
     )
 }

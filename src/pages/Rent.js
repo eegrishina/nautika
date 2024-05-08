@@ -148,7 +148,7 @@ export default function Rent() {
                     }
                 ]}
                 btn="Оформить сертификат"
-                link="certificates" />
+                link="/certificates" />
             <FAQs
                 props={[
                     {

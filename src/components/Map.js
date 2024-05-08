@@ -1,6 +1,7 @@
 import React from "react";
+import { HashLink } from 'react-router-hash-link';
 
-export default function Map({ classInfo, anchorLink }) {
+export default function Map({ classInfo, idForm }) {
     return (
         <div className="map-container">
             <div className={classInfo ? "map-info " + classInfo : "map-info left"}>
@@ -13,9 +14,9 @@ export default function Map({ classInfo, anchorLink }) {
                     <small>Время работы</small>
                     <p>Ежедневно с 10:00 до 20:00</p>
                 </div>
-                <a href={anchorLink}>
+                <HashLink to={window.location.pathname + idForm + "#anchor-form-" + idForm}>
                     <button className="main-btn">Заказать обратный звонок</button>
-                </a>
+                </HashLink>
             </div>
 
             <div className={classInfo ? "map " + classInfo : "map left"} >

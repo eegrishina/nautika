@@ -19,6 +19,7 @@ export default function Walks() {
                 btn="Записаться на прогулку"
                 idForm={location} />
             <PriceCards
+                idForm={location}
                 mainTitles={[
                     {
                         title: "Прогулки на яхте",

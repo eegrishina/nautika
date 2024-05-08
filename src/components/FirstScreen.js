@@ -6,7 +6,7 @@ export default function FirstScreen({ type, imgPath, specialImgClass, title, sma
     function whatKindOfBtn() {
         if (!btnStyle) {
             return (
-                <HashLink to={window.location.pathname + idForm + "#anchor-form-" + idForm}>
+                <HashLink to={"/" + idForm + "#anchor-form-" + idForm}>
                     <button className='main-btn'>{btn}</button>
                 </HashLink>
             )

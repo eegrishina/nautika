@@ -19,6 +19,7 @@ export default function Rent() {
                 btn="Забронировать яхту"
                 idForm={location} />
             <PriceCards
+                idForm={location}
                 mainTitles={[
                     {
                         title: "Прокат и ",

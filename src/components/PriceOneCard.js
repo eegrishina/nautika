@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
-export default function PriceOneCard({ cardTitle, cardText, cardPrice, cardTime, cardBtn, imgVisible, imgLink }) {
+export default function PriceOneCard({ cardTitle, cardText, cardPrice, cardTime, cardBtn, imgVisible, imgLink, idForm }) {
     const [hoverClass, setHoverClass] = useState(false);
     const [size, setSize] = useState("30px");
     const [opacity, setOpacity] = useState(0);
@@ -28,7 +29,11 @@ export default function PriceOneCard({ cardTitle, cardText, cardPrice, cardTime,
                         <div className="pill pill-price">{cardPrice}</div>
                         <div className="pill pill-time">{cardTime}</div>
                     </div>
-                    {hoverClass && <button className="btn-red-arrow" style={{ opacity: opacity }}><Link to='/training'>{cardBtn} <i className="fas fa-arrow-right"></i></Link></button>}
+                    {hoverClass && <button className="btn-red-arrow" style={{ opacity: opacity }}>
+                        <HashLink to={"/" + idForm + "#anchor-form-" + idForm}>
+                            {cardBtn} <i className="fas fa-arrow-right"></i>
+                        </HashLink>
+                    </button>}
                 </div>
             </div>
             <div className="card-img" style={{ display: imgVisible }}>

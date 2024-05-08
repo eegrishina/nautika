@@ -1,9 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { apiYacht } from "../api";
 
-export default function ChooseOneYacht() {
+export default function ChooseOneYacht({ idForm }) {
     const [yachtName, setYachtName] = useState("Луч");
     const [yachtBlock, setYachtBlock] = useState(
         <div className="top-text">
@@ -56,7 +57,11 @@ export default function ChooseOneYacht() {
                 </div>
                 <div className="bottom-btn">
                     <Link to='/weather' className="btn-blue">Смотреть подробный прогноз</Link>
-                    <button className="btn-red-arrow"><Link to='/training'>Записаться на тренировку <i className="fas fa-arrow-right"></i></Link></button>
+                    <button className="btn-red-arrow">
+                        <HashLink to={"/" + idForm + "#anchor-form-" + idForm}>
+                            Записаться на тренировку <i className="fas fa-arrow-right"></i>
+                        </HashLink>
+                    </button>
                 </div>
             </div>
         </div>

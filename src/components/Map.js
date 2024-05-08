@@ -14,7 +14,7 @@ export default function Map({ classInfo, idForm }) {
                     <small>Время работы</small>
                     <p>Ежедневно с 10:00 до 20:00</p>
                 </div>
-                <HashLink to={window.location.pathname + idForm + "#anchor-form-" + idForm}>
+                <HashLink to={"/" + idForm + "#anchor-form-" + idForm}>
                     <button className="main-btn">Заказать обратный звонок</button>
                 </HashLink>
             </div>

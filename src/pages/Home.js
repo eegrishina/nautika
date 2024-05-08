@@ -8,7 +8,7 @@ import FormBlock from '../components/FormBlock';
 import Map from '../components/Map';
 
 export default function Home() {
-    const location="";
+    const location = "";
 
     return (
         <div className='container'>
@@ -37,7 +37,8 @@ export default function Home() {
                 link="/about" />
             <Journey />
             <Statistics />
-            <ChooseOneYacht />
+            <ChooseOneYacht
+                idForm={location} />
             <TextBlock
                 titles={[
                     {

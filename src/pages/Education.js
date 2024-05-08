@@ -19,6 +19,7 @@ export default function Education() {
                 btn="Записаться на тренировку"
                 idForm={location} />
             <PriceCards
+                idForm={location}
                 mainTitles={[
                     {
                         title: "Обучение на яхте",

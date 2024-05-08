@@ -6,13 +6,16 @@ import FormBlock from '../components/FormBlock';
 import Map from '../components/Map';
 
 export default function Services() {
+    const location = "services";
+
     return (
         <div className='container'>
             <FirstScreen type="center"
                 imgPath='./images/main-ship-services.png'
                 title="приключения под парусом"
                 small="С нами каждая морская мечта становится реальностью"
-                btn="Получить консультацию" />
+                btn="Получить консультацию"
+                idForm={location} />
             <ServicesDetail />
             <GallerryGrid
                 title="Внесите краски в свою жизнь и в жизнь своих близких"
@@ -64,6 +67,7 @@ export default function Services() {
                     },
                 ]} />
             <FormBlock
+                idForm={location}
                 titles={[
                     {
                         title: "Заполните форму и получите",

@@ -8,13 +8,16 @@ import FAQs from '../components/FAQs';
 import FormBlock from '../components/FormBlock';
 
 export default function Walks() {
+    const location = "walks";
+
     return (
         <div className='container'>
             <FirstScreen type="center"
                 imgPath='./images/main-ship-walk.png'
                 title="морские прогулки"
                 small="Отправляйтесь с нами в увлекательные морские приключения"
-                btn="Записаться на прогулку" />
+                btn="Записаться на прогулку"
+                idForm={location} />
             <PriceCards
                 mainTitles={[
                     {
@@ -168,6 +171,7 @@ export default function Walks() {
                     },
                 ]} />
             <FormBlock
+                idForm={location}
                 titles={[
                     {
                         title: "У вас остались вопросы?",

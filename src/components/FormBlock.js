@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "./Form";
 
-export default function FormBlock({ titles, imgLink, formType }) {
+export default function FormBlock({ idForm, titles, imgLink, formType }) {
     const title = titles.map((i, idx) => {
         return (
             <span key={idx} className={i.blue ? "blue" : undefined}>{i.title}</span>
@@ -9,7 +9,7 @@ export default function FormBlock({ titles, imgLink, formType }) {
     })
 
     return (
-        <div id="anchor-form" className={"form-container " + formType}>
+        <div id={"anchor-form-" + idForm} className={"form-container " + formType}>
             {(formType === 'discount' ? (
                 <>
                     <div className="form-info">
@@ -22,6 +22,7 @@ export default function FormBlock({ titles, imgLink, formType }) {
                 </>
             ) : (
                 <>
+                    <h3 className="small-screen">{title}</h3>
                     <div className="form-img">
                         <img src={imgLink} alt=""></img>
                     </div>

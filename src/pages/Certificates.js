@@ -4,6 +4,8 @@ import FAQs from '../components/FAQs';
 import FormBlock from '../components/FormBlock';
 
 export default function Certificates() {
+    const location = "certificates";
+
     return (
         <div className='container'>
             <FirstScreen imgPath='./images/main-ship-certificates.png'
@@ -11,7 +13,7 @@ export default function Certificates() {
                 title="подарочные сертификаты"
                 small="Подарите своим близким незабываемые впечатления"
                 btn="Оформить сертификат"
-            />
+                idForm={location} />
             <FAQs
                 props={[
                     {
@@ -51,6 +53,7 @@ export default function Certificates() {
                     },
                 ]} />
             <FormBlock
+                idForm={location}
                 titles={[
                     {
                         title: "У вас остались вопросы?",

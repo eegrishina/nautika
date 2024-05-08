@@ -4,13 +4,16 @@ import TextBlock from '../components/TextBlock';
 import FormBlock from '../components/FormBlock';
 
 export default function About() {
+    const location = "about";
+
     return (
         <div className='container'>
             <FirstScreen imgPath='./images/main-ship-about.png'
                 specialImgClass="img-about"
                 title="знакомство с наутикой"
                 small="Давайте узнаем друг друга немного ближе"
-                btn="Получить консультацию" />
+                btn="Получить консультацию"
+                idForm={location} />
             <TextBlock
                 titles={[
                     {
@@ -29,6 +32,7 @@ export default function About() {
                 btn="Оформить сертификат"
                 link="certificates" />
             <FormBlock
+                idForm={location}
                 titles={[
                     {
                         title: "У вас остались вопросы?",

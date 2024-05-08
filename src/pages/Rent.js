@@ -8,13 +8,16 @@ import FAQs from '../components/FAQs';
 import FormBlock from '../components/FormBlock';
 
 export default function Rent() {
+    const location = "rent";
+
     return (
         <div className='container'>
             <FirstScreen type="center"
                 imgPath='./images/main-ship-rent2.png'
                 title="прокат и аренда парусных яхт"
                 small="Аренда яхт для ваших морских путешествий"
-                btn="Забронировать яхту" />
+                btn="Забронировать яхту"
+                idForm={location} />
             <PriceCards
                 mainTitles={[
                     {
@@ -185,6 +188,7 @@ export default function Rent() {
                     },
                 ]} />
             <FormBlock
+                idForm={location}
                 titles={[
                     {
                         title: "У вас остались вопросы?",

@@ -8,13 +8,16 @@ import FAQs from '../components/FAQs';
 import FormBlock from '../components/FormBlock';
 
 export default function Education() {
+    const location = "education";
+
     return (
         <div className='container'>
             <FirstScreen type="center"
                 imgPath='./images/main-ship-education.png'
                 title="Обучение яхтингу"
                 small="Ваш путь к парусному искусству начинается здесь"
-                btn="Записаться на тренировку" />
+                btn="Записаться на тренировку"
+                idForm={location} />
             <PriceCards
                 mainTitles={[
                     {
@@ -172,6 +175,7 @@ export default function Education() {
                     },
                 ]} />
             <FormBlock
+                idForm={location}
                 titles={[
                     {
                         title: "У вас остались вопросы?",

@@ -8,13 +8,16 @@ import FormBlock from '../components/FormBlock';
 import Map from '../components/Map';
 
 export default function Home() {
+    const location="";
+
     return (
         <div className='container'>
             <FirstScreen type="center"
                 imgPath='./images/main-ship.png'
                 title="Откройте для себя парусный спорт"
                 small="Первые шаги к серьезному парусному спорту"
-                btn="Записаться на тренировку" />
+                btn="Записаться на тренировку"
+                idForm={location} />
             <TextBlock
                 titles={[
                     {
@@ -53,6 +56,7 @@ export default function Home() {
                 btn="Оформить сертификат"
                 link="certificates" />
             <FormBlock
+                idForm={location}
                 titles={[
                     {
                         title: "Заполните форму и получите",

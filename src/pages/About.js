@@ -10,7 +10,7 @@ export default function About() {
         <div className='container'>
             <FirstScreen imgPath='./images/main-ship-about.png'
                 specialImgClass="img-about"
-                title="знакомство с наутикой"
+                title={`знакомство \nс наутикой`}
                 small="Давайте узнаем друг друга немного ближе"
                 btn="Получить консультацию"
                 idForm={location} />

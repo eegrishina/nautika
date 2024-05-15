@@ -37,6 +37,12 @@
     background-color: inherit;
 }
 
+.main-btn:disabled {
+    background-color: var(--disabled-bg-btn);
+    color: var(--disabled-text-btn);
+    cursor: not-allowed;
+}
+
 /* Circle Red Button */
 .circle-btn {
     height: 52px;

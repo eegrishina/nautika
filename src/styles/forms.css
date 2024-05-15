@@ -56,6 +56,7 @@ form label {
     color: var(--dark-color-title);
     font-size: 14px;
     font-weight: 600;
+    outline: none;
 }
 
 form input {
@@ -85,15 +86,9 @@ form input.err:focus {
 }
 
 .form-text-inputs {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 17px;
-}
-
-.input100-row {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
 }
 
 .form-text-inputs label {
@@ -181,12 +176,9 @@ form input.err:focus {
         font-size: 13px;
     }
 
-    .input100-row {
+    .form-text-inputs {
+        display: flex;
         flex-direction: column;
-    }
-
-    .form-text-inputs,
-    .input100-row {
         gap: 13px;
     }
 

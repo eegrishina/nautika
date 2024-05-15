@@ -56,6 +56,50 @@ const apiYacht = [
         name: 'Финн',
         description: '«Финн» — класс яхт, предназначенный для двоих человек, которые разделяют обязанности по управлению яхтой и настройкой паруса. Однако если вы сильны и имеете достаточную массу тела, то вполне можете попробовать управлять ей самостоятельно.',
     }
-]
+];
 
-export { api, apiYacht };
+const formData = [
+    {
+        name: "name",
+        placeholder: "Имя",
+        label: "Ваше имя*",
+        type: "text",
+        required: true,
+        pattern: "^[a-zа-яё]+$",
+        style: "w-2",
+    },
+    {
+        name: "lastname",
+        placeholder: "Фамилия",
+        label: "Ваша фамилия*",
+        type: "text",
+        required: true,
+        pattern: "^[a-zа-яё]+$",
+        style: "w-2",
+    },
+    {
+        name: "phone",
+        placeholder: "+7(     )     -    - ",
+        label: "Номер телефона*",
+        type: "text",
+        required: true,
+        pattern: "^\\+?[0-9]{11,13}$",
+    },
+    {
+        name: "email",
+        placeholder: "Адрес эл. почты",
+        label: "Электронная почта*",
+        type: "email",
+        required: true,
+        pattern: "^[0-9a-z]+@[0-9a-z]+\\.[0-9a-z]+$",
+    },
+];
+
+const initialFormData = {
+    name: "",
+    lastname: "",
+    phone: "",
+    email: "",
+}
+
+export { api, apiYacht, formData, initialFormData };

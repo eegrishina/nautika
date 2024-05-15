@@ -30,10 +30,6 @@
     font-size: 30px;
 }
 
-.faq-container ul li:hover {
-    list-style-type: disc;
-}
-
 .faq-container ul span,
 .faq-container ul p.card {
     font-size: 16px;
@@ -52,7 +48,7 @@
 }
 
 .faq-container ul hr {
-    margin-top: 18px;
+    margin: 18px 0 4px 0;
 }
 
 @media (max-width: 1024px) {
@@ -76,8 +72,20 @@
         margin-bottom: 20px;
     }
 
+    .faq-container ul li p.question {
+        line-height: 90%;
+    }
+
     .faq-container ul p.card {
         margin: 10px 14px 0 18px;
+    }
+
+    .faq-container ul span {
+        top: 14px;
+    }
+
+    .faq-container ul li {
+        padding-top: 2px;
     }
 }
 

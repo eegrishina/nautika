@@ -9,7 +9,7 @@ export default function OneFAQ({ idx, question, answer }) {
     }
 
     return (
-        <li onClick={handleClick}>
+        <li onClick={handleClick} style={active ? { listStyleType: "disc" } : { listStyleType: "circle" }}>
             <span>{idx < 10 ? '0' + (idx + 1) : idx}</span>
             <p className='question'>{question}</p>
             {active && <p className='card'>{answer}</p>}

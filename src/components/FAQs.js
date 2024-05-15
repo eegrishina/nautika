@@ -4,10 +4,10 @@ import OneFAQ from './OneFAQ';
 export default function FAQs({ props }) {
     const faqs = props.map((i, idx) => {
         return (
-            <>
-                <OneFAQ key={i.id} idx={idx} question={i.question} answer={i.answer} />
+            <div key={i.id} >
+                <OneFAQ idx={idx} question={i.question} answer={i.answer} />
                 <hr></hr>
-            </>
+            </div>
         )
     })
 

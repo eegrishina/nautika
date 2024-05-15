@@ -23,6 +23,7 @@ export default function Form() {
         localStorage.setItem('form', JSON.stringify(arrayForm));
 
         window.location.href = '#/thanks';
+        window.scrollTo(0, 0);
     }
 
     function handleChange(e) {

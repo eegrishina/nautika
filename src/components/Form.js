@@ -27,7 +27,7 @@ export default function Form() {
     }
 
     function handleChange(e) {
-        if (changedErrStyle.has(e.target.name)) {
+        if (errStyle.has(e.target.name)) {
             changedErrStyle.delete(e.target.name);
             setErrStyle(changedErrStyle);
         }

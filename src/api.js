@@ -91,7 +91,7 @@ const formData = [
         label: "Электронная почта*",
         type: "email",
         required: true,
-        pattern: "^[0-9a-z]+@[0-9a-z]+\\.[0-9a-z]+$",
+        pattern: "^[\\-.\\w]+@([\\-\\w]+\\.)+[\\-\\w]+$"
     },
 ];
 

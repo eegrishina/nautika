@@ -67,7 +67,7 @@ export default function Form() {
             <div key={item.name} className={item.style}>
                 <label htmlFor={item.name}>{item.label}</label>
                 <input className={errStyle.has(item.name) ? "err" : ""}
-                    type={item.type} name={item.name} placeholder={item.placeholder}
+                    type={item.type} id={item.name} placeholder={item.placeholder}
                     required={item.required} pattern={item.pattern}
                     onChange={(e) => handleChange(e)}
                     onBlur={(e) => handleBlur(e)}
@@ -87,7 +87,7 @@ export default function Form() {
 
                 <label htmlFor="checkbox" tabIndex="0">
                     Я принимаю <Link to="/privacy">политику обработки персональных данных</Link>
-                    <input type="checkbox" name="checkbox"
+                    <input type="checkbox" id="checkbox"
                         checked={checked.current}
                         onChange={() => {
                             checked.current = !checked.current;

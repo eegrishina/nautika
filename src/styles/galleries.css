@@ -4,6 +4,7 @@
     flex-direction: column;
     gap: 30px;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .gallery-grid-title {
@@ -145,6 +146,16 @@ li.big {
         display: none;
     }
 
+    .images-small-screen {
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .images-small-screen::-webkit-scrollbar {
+        display: none;
+    }
+
     .gallery-small-screen,
     .images-small-screen {
         display: flex;
@@ -155,6 +166,7 @@ li.big {
         flex-direction: column;
         overflow-x: hidden;
         user-select: none;
+        height: 100%;
     }
 
     .images-small-screen .gallery-img {

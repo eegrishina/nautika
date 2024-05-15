@@ -8,13 +8,15 @@ export default function GallerryGrid({ title, text, link, textBtn, images }) {
     const [position, setPosition] = useState(0);
 
     function handleClickLeft() {
+        const imgSize = document.getElementById('img0').getBoundingClientRect().width;
         setCount(count + 1);
-        setPosition(position - 280);
+        setPosition(position - Math.round(imgSize) - 30);
     }
 
     function handleClickRight() {
+        const imgSize = document.getElementById('img0').getBoundingClientRect().width;
         setCount(count - 1);
-        setPosition(position + 280);
+        setPosition(position + Math.round(imgSize) + 30);
     }
 
     const imagesGalleryGrid = images.map((i, idx) => {
@@ -28,7 +30,7 @@ export default function GallerryGrid({ title, text, link, textBtn, images }) {
                                 <p className='card'>{text}</p>
                                 <Link to={link}><button className='main-btn'>{textBtn}</button></Link>
                             </div> :
-                            <img src={i.src} alt=''></img>}
+                            <img id={`img${idx}`} src={i.src} alt=''></img>}
                     </div>
                 </div>
             </div>

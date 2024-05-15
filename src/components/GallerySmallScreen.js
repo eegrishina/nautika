@@ -2,7 +2,6 @@ import { React } from 'react';
 import { Link } from "react-router-dom";
 
 export default function GallerrySmallScreen({ title, text, link, textBtn, images, styleScrollBtn }) {
-
     const imagesSmallScreen = images
         .filter((i) => i.src !== '')
         .map((i, idx) => {
@@ -15,8 +14,7 @@ export default function GallerrySmallScreen({ title, text, link, textBtn, images
 
     return (
         <div className='gallery-small-screen'>
-            <div className='images-small-screen'
-                style={styleScrollBtn}>
+            <div className='images-small-screen'>
                 {imagesSmallScreen}
             </div>
             <div className='gallery-textblock'>

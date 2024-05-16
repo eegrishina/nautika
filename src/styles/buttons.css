@@ -40,7 +40,7 @@
 .main-btn:disabled {
     background-color: var(--disabled-bg-btn);
     color: var(--disabled-text-btn);
-    cursor: not-allowed;
+    cursor: default;
 }
 
 /* Circle Red Button */
@@ -70,9 +70,30 @@
     transform: rotate(180deg);
 }
 
+.circle-btn:hover:not(:disabled) {
+    border-color: var(--red-color-hover);
+
+    i {
+        color: var(--red-color-hover);
+    }
+}
+
+.circle-btn:active:not(:disabled) {
+    border-color: var(--red-color-active);
+
+    i {
+        color: var(--red-color-active);
+    }
+}
+
 .circle-btn:disabled {
-    opacity: 0.3;
-    cursor: auto;
+    border-color: var(--red-color-disabled);
+    cursor: default;
+    pointer-events: none;
+
+    i {
+        color: var(--red-color-disabled);
+    }
 }
 
 /* Pills */

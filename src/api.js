@@ -60,9 +60,8 @@ const apiYacht = [
 
 const infoPrice = [
     {
-        id: 1,
+        id: "education",
         title: "Обучение на «Луче»",
-        path: "/education",
         data: [
             {
                 title: "Ознакомительный урок",
@@ -80,12 +79,10 @@ const infoPrice = [
                 price: "19 000 ₽",
             }
         ],
-        disabled: true,
     },
     {
-        id: 2,
+        id: "walks",
         title: "Прогулки на «Солинге»",
-        path: "/walks",
         data: [
             {
                 title: "Почасовая прогулка",
@@ -98,12 +95,10 @@ const infoPrice = [
                 price: "15 000 ₽",
             }
         ],
-        disabled: true,
     },
     {
-        id: 3,
+        id: "rent",
         title: "Аренда яхт",
-        path: "/rent",
         data: [
             {
                 title: "Яхта «Луч»",
@@ -121,12 +116,10 @@ const infoPrice = [
                 price: "2 000 ₽ / час",
             }
         ],
-        disabled: true,
     },
     {
-        id: 4,
+        id: "certificates",
         title: "Фотосессии на яхте",
-        path: "/certificates",
         data: [
             {
                 title: "Стандартная",
@@ -140,7 +133,6 @@ const infoPrice = [
                 price: "2 000 ₽",
             }
         ],
-        disabled: false,
     }
 ];
 

@@ -35,6 +35,7 @@
     --red-color: #D00000;
     --red-color-hover: #FB2525;
     --red-color-active: #A61010;
+    --red-color-disabled: #DD919A;
     --input-correct-focus: #C2DEF0;
     --input-incorrect: #FB252566;
     --input-incorrect-focus: #FB252533;
@@ -45,10 +46,6 @@
     margin: 0;
     padding: 0;
 }
-
-/* html {
-    scroll-behavior: smooth;
-} */
 
 a {
     color: inherit;

@@ -16,15 +16,10 @@
     position: absolute;
     bottom: 30px;
     right: 30px;
-    opacity: 0.3;
 }
 
 .services-price:hover {
     box-shadow: 0 0 10px 0 rgba(40, 146, 215, 0.16);
-}
-
-.services-price:hover .circle-btn.btn-link {
-    opacity: 1;
 }
 
 .services-price h4 {

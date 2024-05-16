@@ -1,11 +1,12 @@
-import React from "react";
-import { useState } from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import { apiYacht } from "../api";
 
 export default function ChooseOneYacht({ idForm }) {
     const [yachtName, setYachtName] = useState("Луч");
+    const [activePill, setActivePill] = useState("luch");
+    
     const [yachtBlock, setYachtBlock] = useState(
         <div className="top-text">
             <h6>Яхта <span className="blue">«Луч»</span></h6>
@@ -15,21 +16,17 @@ export default function ChooseOneYacht({ idForm }) {
 
     const buttons = apiYacht.map(y => {
         return (
-            <button key={y.id} id={y.id} className={y.active ? "active" : undefined}
+            <button key={y.id} id={y.id} className={activePill === y.id ? "active" : undefined}
                 onClick={() => handleClick(y.id)}>{y.name}</button>
         )
-    })
+    });
 
     function handleClick(btnId) {
-        apiYacht
-            .filter(y => btnId !== y.id)
-            .map(y => y.active = false)
-
         setYachtBlock(apiYacht
             .filter(y => btnId === y.id)
             .map(y => {
-                setYachtName(y.name)
-                y.active = true
+                setYachtName(y.name);
+                setActivePill(y.id);
                 return (
                     <div key={y.id} className="top-text">
                         <h6>Яхта <span className="blue">«{y.name}»</span></h6>

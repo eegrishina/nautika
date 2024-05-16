@@ -118,7 +118,7 @@
 }
 
 .top-btn button:not(.active):hover {
-    background-color: #EBF0FA;
+    color: var(--blue-color-hover);
 }
 
 .top-btn button.active {

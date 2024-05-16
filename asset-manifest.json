@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "https://kaktusgr.github.io/nautika/static/css/main.fdfd2304.css",
-    "main.js": "https://kaktusgr.github.io/nautika/static/js/main.585946d6.js",
+    "main.css": "https://kaktusgr.github.io/nautika/static/css/main.dd38feb4.css",
+    "main.js": "https://kaktusgr.github.io/nautika/static/js/main.85f50f32.js",
     "static/media/BebasNeue-Bold.ttf": "https://kaktusgr.github.io/nautika/static/media/BebasNeue-Bold.0fff693ee8f49e3b60f2.ttf",
     "index.html": "https://kaktusgr.github.io/nautika/index.html",
-    "main.fdfd2304.css.map": "https://kaktusgr.github.io/nautika/static/css/main.fdfd2304.css.map",
-    "main.585946d6.js.map": "https://kaktusgr.github.io/nautika/static/js/main.585946d6.js.map"
+    "main.dd38feb4.css.map": "https://kaktusgr.github.io/nautika/static/css/main.dd38feb4.css.map",
+    "main.85f50f32.js.map": "https://kaktusgr.github.io/nautika/static/js/main.85f50f32.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdfd2304.css",
-    "static/js/main.585946d6.js"
+    "static/css/main.dd38feb4.css",
+    "static/js/main.85f50f32.js"
   ]
 }

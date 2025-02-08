@@ -6,7 +6,7 @@
 ### Демонстрация адаптивности страницы *Контакты*
 <img src="./imgForReadme/adaptingPageContact.gif" alt="Adapting page GIF" width="80%">
 
-### [Перейдите по ссылке для просмотра демо сайта](https://kaktusgr.github.io/nautika/)
+### [Перейдите по ссылке для просмотра демо сайта](https://eegrishina.github.io/nautika/)
 
 
 ## Описание
